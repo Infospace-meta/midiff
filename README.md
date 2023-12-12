@@ -1,5 +1,5 @@
-# Vue-learn
-Let's build with vue
+# Midiff Institute
+The Institute Website
 
 ## Initialising the repository
 > cd app
