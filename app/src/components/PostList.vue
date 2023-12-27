@@ -11,16 +11,6 @@ import { onMounted, onUnmounted, onUpdated } from "vue";
 import SinglePost from "./SinglePost.vue";
 
 const props = defineProps(["posts"]);
-
-// onMounted(() => {
-//   console.log("Component mounted");
-// });
-// onUnmounted(() => {
-//   console.log("Component unmounted");
-// });
-// onUpdated(() => {
-//   console.log("Component updated");
-// });
 </script>
 
 <style lang="scss" scoped></style>
