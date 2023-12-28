@@ -1,5 +1,5 @@
 <template>
-  <div>Dept View</div>
+  <div>Courses View</div>
 </template>
 
 <script setup></script>

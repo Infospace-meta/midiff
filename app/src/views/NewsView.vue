@@ -1,5 +1,5 @@
 <template>
-  <div>Dept View</div>
+  <div>News view</div>
 </template>
 
 <script setup></script>
