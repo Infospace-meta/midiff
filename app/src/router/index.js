@@ -8,12 +8,14 @@ import JobsComponent from "../components/JobsComponent.vue";
 import JobDetailsComponent from "../components/JobDetails.vue";
 import AboutView from "../views/AboutView.vue";
 import DeptView from "../views/DeptView.vue";
+import NewsView from "../views/NewsView.vue";
 
 const routes = [
   { path: "/", name: "posts", component: PostsView },
   { path: "/home", name: "home", component: HomeView },
   { path: "/about", name: "about", component: AboutView },
   { path: "/departments", name: "departments", component: DeptView },
+  { path: "/news", name: "departments", component: NewsView },
   { path: "/jobs", name: "jobs", component: JobsComponent },
   { path: "/posts/:id", name: "details", component: DetailsView, props: true },
   { path: "/jobs/:id", name: "job_details", component: JobDetailsComponent },
