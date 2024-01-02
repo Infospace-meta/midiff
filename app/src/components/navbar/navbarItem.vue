@@ -24,9 +24,10 @@
       <router-link
         :to="{ name: 'home' }"
         class="lg:mr-5 p-2 text-lg max-lg:border-b border-yellow-700 font-medium hover:text-indigo-700"
-        ><button class="p-2 bg-yellow-500 rounded-lg text-indigo-700">Enroll Now</button></router-link
+        ><button class="p-2 bg-yellow-500 rounded-lg text-indigo-700">
+          Enroll Now
+        </button></router-link
       >
-      
     </nav>
 
     <div
@@ -42,7 +43,6 @@
       >
         <span class="sr-only">Open main menu</span>
         <h1 class="text-5xl mr-4 text-gray-900 hover:text-indigo-700">
-          <!-- Display hamburger icon when menu is closed, and 'x' when menu is open -->
           {{ close ? "\u2261" : "✕" }}
         </h1>
       </button>
