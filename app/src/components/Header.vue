@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
   <div>
     <header
       class="w-full h-auto fixed z-30 top-10 text-gray-700 border-b border-gray-200 bg-white shadow-sm body-font"
@@ -18,9 +18,9 @@ import NavbarIcon from "../components/navbar/navbarIcon.vue";
 import NavbarItems from "../components/navbar/navbarItem.vue";
 </script>
 
-<style lang="scss" scoped></style> -->
+<style lang="scss" scoped></style>
 
-<template>
+<!-- <template>
   <div>
     <header
       class="w-full h-16 fixed z-30 top-0 text-gray-700 border-b border-gray-200 bg-white shadow-sm body-font"
@@ -29,7 +29,11 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
         class="flex px-2 items-center justify-between mt-4 max-w-screen-xl md:mx-auto"
       >
         <a class="flex pl-4 items-center font-medium text-gray-900 title-font">
-          <img src="../assets/icon.png" alt="icon" class="w-auto h-10 text-gray-900 fill-current" />
+          <img
+            src="../assets/icon.png"
+            alt="icon"
+            class="w-auto h-10 text-gray-900 fill-current"
+          />
           <h1 class="text-sm text-yellow-700">
             MIDIFF INSTITUTE OF PROFFESIONAL STUDIES
           </h1>
@@ -46,7 +50,7 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
             >Home
           </router-link>
           <router-link
-            to="/about_us"
+            to="/about"
             class="lg:mr-5 p-4 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
             @click="toggle"
             >About us
@@ -179,9 +183,7 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
         <div
           class="flex items-center right-0 h-full pl-4 ml-6 border-l-0 lg:border-l border-orange-700"
         >
-          <!-- <a href="#_" class="mr-5 font-medium hover:text-cyan-600"
-            >0704040404</a
-          > -->
+
           <a
             href="#_"
             class="px-4 py-2 text-xs font-bold text-white uppercase transition-all duration-150 bg-cyan-600 rounded shadow outline-none active:bg-cyan-600 hover:shadow-md focus:outline-none ease"
@@ -209,25 +211,14 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
                 d="M1 0h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0 8h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0-4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2z"
               />
             </svg>
-            <!-- <svg             
-              class="w-6 h-6"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-            >
-              <path
-                fill="#000000"
-                fill-rule="evenodd"
-                d="M16.293 17.707a1 1 0 001.414-1.414L11.414 10l6.293-6.293a1 1 0 00-1.414-1.414L10 8.586 3.707 2.293a1 1 0 00-1.414 1.414L8.586 10l-6.293 6.293a1 1 0 101.414 1.414L10 11.414l6.293 6.293z"
-              />
-            </svg> -->
+
           </button>
         </div>
       </div>
     </header>
   </div>
-</template>
-
+</template> -->
+<!-- 
 <script setup>
 let close = true;
 let open = true;
@@ -239,4 +230,4 @@ const toggle = () => {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped></style> -->
