@@ -29,7 +29,11 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
         class="flex px-2 items-center justify-between mt-4 max-w-screen-xl md:mx-auto"
       >
         <a class="flex pl-4 items-center font-medium text-gray-900 title-font">
-          <img src="../assets/icon.png" alt="icon" class="w-auto h-10 text-gray-900 fill-current" />
+          <img
+            src="../assets/icon.png"
+            alt="icon"
+            class="w-auto h-10 text-gray-900 fill-current"
+          />
           <h1 class="text-sm text-yellow-700">
             MIDIFF INSTITUTE OF PROFFESIONAL STUDIES
           </h1>
@@ -40,38 +44,34 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
           id="nav-content"
         >
           <router-link
-            to="/"
+            :to="{ name: 'home' }"
             class="lg:mr-5 p-4 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
             @click="toggle"
             >Home
           </router-link>
           <router-link
-            to="/about"
+            :to="{ name: 'about' }"
             class="lg:mr-5 p-4 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
             @click="toggle"
-            >About us
+            >About Us
           </router-link>
           <a
+            :to="{ name: 'courses' }"
             class="lg:mr-5 p-4 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
             @click="toggle"
-            >Our work
+            >Our Courses
           </a>
           <a
+            :to="{ name: 'news' }"
             class="lg:mr-5 p-4 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
             @click="toggle"
-            >Stories
+            >News and Updates
           </a>
           <a
             class="lg:mr-5 p-4 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
             @click="toggle"
             >Contact
           </a>
-          <a
-            class="lg:mr-5 p-4 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
-            @click="toggle"
-            >Get involved
-          </a>
-
           <div class="fixed lg:hidden bottom-0 mx-auto w-full px-6 lg:px-8">
             <div
               class="flex flex-col items-center gap-4 rounded-lg bg-cyan-600 p-6 shadow-lg sm:flex-row sm:justify-between"
