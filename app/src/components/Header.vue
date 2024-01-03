@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed w-full top-0">
+  <div class="fixed w-full top-0 z-50">
     <ContactNav />
     <header
       class="text-gray-700 border-b border-gray-200 bg-white shadow-sm body-font"
