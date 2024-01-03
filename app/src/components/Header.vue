@@ -52,18 +52,21 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
           </router-link>
           <router-link
             :to="{ name: 'about' }"
+            active-class="active-link"
             class="lg:mr-5 p-4 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
             @click="toggle"
             >About us
           </router-link>
           <router-link
             :to="{ name: 'courses' }"
+            active-class="active-link"
             class="lg:mr-5 p-4 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
             @click="toggle"
             >Our Courses
           </router-link>
           <router-link
             :to="{ name: 'news' }"
+            active-class="active-link"
             class="lg:mr-5 p-4 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
             @click="toggle"
             >News and Updates
@@ -86,7 +89,7 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
                 class="inline-flex items-center gap-2 rounded-full border border-white bg-white px-8 py-3 text-cyan-600 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90"
                 href="/"
               >
-                <span class="text-sm font-medium"> DONATE </span>
+                <span class="text-sm font-medium"> ENROLL </span>
 
                 <svg
                   class="h-5 w-5 rtl:rotate-180"
@@ -188,7 +191,7 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
             href="#_"
             class="px-4 py-2 text-xs font-bold text-white uppercase transition-all duration-150 bg-cyan-600 rounded shadow outline-none active:bg-cyan-600 hover:shadow-md focus:outline-none ease"
           >
-            Donate
+            Enroll
           </a>
           <button
             data-collapse-toggle="navbar-sticky"
