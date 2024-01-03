@@ -6,7 +6,7 @@
       id="nav-content"
     >
       <router-link
-        :to="{ name: 'home' }"
+        :to="{ name: 'about' }"
         class="lg:mr-5 p-4 text-lg max-lg:border-b border-yellow-700 font-medium hover:text-indigo-700"
         >About Us</router-link
       >

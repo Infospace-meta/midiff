@@ -5,6 +5,7 @@ import App from "./App.vue";
 /**styling */
 // import "./style.css";
 import "./assets/tailwind.css"; //tailwind
+import { library } from '@fortawesome/fontawesome-svg-core'
 
 const app = createApp(App);
 app.use(router);
