@@ -11,13 +11,13 @@
         >About Us</router-link
       >
       <router-link
-        :to="{ name: 'home' }"
+        :to="{ name: 'courses' }"
         class="lg:mr-5 p-4 text-lg max-lg:border-b border-yellow-700 font-medium hover:text-indigo-700"
         >Our Courses</router-link
       >
       <NavbarMenu />
       <router-link
-        :to="{ name: 'home' }"
+        :to="{ name: 'news' }"
         class="lg:mr-5 p-4 text-lg max-lg:border-b border-yellow-700 font-medium hover:text-indigo-700"
         >News and Updates</router-link
       >
