@@ -53,25 +53,26 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
             :to="{ name: 'about' }"
             class="lg:mr-5 p-4 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
             @click="toggle"
-            >About Us
+            >About us
           </router-link>
-          <a
+          <router-link
             :to="{ name: 'courses' }"
             class="lg:mr-5 p-4 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
             @click="toggle"
             >Our Courses
-          </a>
-          <a
+          </router-link>
+          <router-link
             :to="{ name: 'news' }"
             class="lg:mr-5 p-4 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
             @click="toggle"
             >News and Updates
-          </a>
-          <a
+          </router-link>
+          <router-link
+            :to="{ name: 'home' }"
             class="lg:mr-5 p-4 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
             @click="toggle"
             >Contact
-          </a>
+          </router-link>
           <div class="fixed lg:hidden bottom-0 mx-auto w-full px-6 lg:px-8">
             <div
               class="flex flex-col items-center gap-4 rounded-lg bg-cyan-600 p-6 shadow-lg sm:flex-row sm:justify-between"
