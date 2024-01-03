@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <!-- <div>
     <header
       class="w-full h-auto fixed z-30 top-0 text-gray-700 border-b border-gray-200 bg-white shadow-sm body-font"
     >
@@ -10,7 +10,8 @@
         <NavbarItems />
       </div>
     </header>
-  </div>
+  </div> -->
+  <header>header</header>
 </template>
 
 <script setup>
