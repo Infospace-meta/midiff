@@ -46,7 +46,7 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
             >Home
           </router-link>
           <router-link
-            to="/about_us"
+            to="/about"
             class="lg:mr-5 p-4 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
             @click="toggle"
             >About us
