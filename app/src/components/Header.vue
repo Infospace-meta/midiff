@@ -1,11 +1,10 @@
 <template>
-  <div>
+  <div class="fixed w-full top-0">
+    <ContactNav />
     <header
-      class="w-full h-auto fixed z-30 top-10 text-gray-700 border-b border-gray-200 bg-white shadow-sm body-font"
+      class="text-gray-700 border-b border-gray-200 bg-white shadow-sm body-font"
     >
-      <div
-        class="flex flex-row px-2 items-center justify-evenly mt-4 md:mx-auto"
-      >
+      <div class="flex flex-row items-center justify-evenly mx-auto max-w-7xl">
         <router-link :to="{ name: 'home' }"> <NavbarIcon /></router-link>
         <NavbarItems />
       </div>
@@ -14,6 +13,7 @@
 </template>
 
 <script setup>
+import ContactNav from "../components/navbar/navcontact.vue";
 import NavbarIcon from "../components/navbar/navbarIcon.vue";
 import NavbarItems from "../components/navbar/navbarItem.vue";
 </script>

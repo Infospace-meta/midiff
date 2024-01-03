@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full h-96">
+  <div class="w-full lg:h-96 mx-auto">
     <div
-      class="flex flex-col justify-center col-span-12 align-middle bg-no-repeat bg-cover lg:col-span-6 lg:h-auto"
+      class="flex flex-col justify-center col-span-12 align-middle bg-no-repeat bg-cover lg:col-span-6 lg:h-96 text-center text-5xl"
       style="
         background-image: url('https://source.unsplash.com/random/640x480');
         background-position: center center;

@@ -1,5 +1,4 @@
 <template>
-  <div>About page</div>
   <Hero />
   <AboutUS />
 </template>
