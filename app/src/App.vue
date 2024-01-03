@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-white">
     <ContactNav />
     <Header />
-    <div class="mt-4">
+    <div class="mt-16">
       <RouterView />
     </div>
     <Footer />
