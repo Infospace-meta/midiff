@@ -76,7 +76,7 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
           >
             <button
               class="inline-flex items-center justify-center rounded-md"
-              @click="showDropdown()"
+              @mouseover="showDropdown()"
             >
               <span class="text-sm font-medium text-gray-700">Departments</span>
               <svg
@@ -99,6 +99,7 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
             <div
               id="departments"
               class="absolute hidden z-10 w-40 p-0 mt-4 bg-white border border-gray-300 rounded-md shadow-lg"
+              @mouseleave="showDropdown()"
             >
               <ul class="">
                 <li class="">
