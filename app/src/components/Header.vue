@@ -74,8 +74,9 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
           <a
             class="relative inline-block lg:mr-5 p-2 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
           >
-            <!-- <button
-              class="inline-flex items-center justify-center p-2 rounded-md"
+            <button
+              class="inline-flex items-center justify-center rounded-md"
+              @click="showDropdown()"
             >
               <span class="text-sm font-medium text-gray-700">Departments</span>
               <svg
@@ -92,16 +93,18 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
                   d="M19 9l-7 7-7-7"
                 ></path>
               </svg>
-            </button> -->
+            </button>
 
+            <!-- DROPDOWN MENU -->
             <div
-              class="absolute right-[35%] z-10 w-40 p-0 mt-2 bg-white border border-gray-300 rounded-md shadow-lg"
+              id="departments"
+              class="absolute hidden z-10 w-40 p-0 mt-4 bg-white border border-gray-300 rounded-md shadow-lg"
             >
-              <ul class="-mt-6">
-                <li class="-mt-6">
+              <ul class="">
+                <li class="">
                   <a
                     href="#"
-                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 -mt-6"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >Product 1</a
                   >
                 </li>
@@ -285,6 +288,10 @@ const toggle = () => {
   document.getElementById("nav-content").classList.toggle("sm:max-lg:flex");
   close = false;
   close = false;
+};
+
+const showDropdown = () => {
+  document.getElementById("departments").classList.toggle("hidden");
 };
 </script>
 
