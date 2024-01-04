@@ -74,8 +74,7 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
           <a
             class="relative inline-block lg:mr-5 p-2 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
           >
-            <!-- <span class="">Departments</span> -->
-            <button
+            <!-- <button
               class="inline-flex items-center justify-center p-2 rounded-md"
             >
               <span class="text-sm font-medium text-gray-700">Departments</span>
@@ -93,16 +92,16 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
                   d="M19 9l-7 7-7-7"
                 ></path>
               </svg>
-            </button>
+            </button> -->
 
             <div
-              class="absolute right-[35%] z-10 w-40 mt-2 bg-white border border-gray-300 rounded-md shadow-lg"
+              class="absolute right-[35%] z-10 w-40 p-0 mt-2 bg-white border border-gray-300 rounded-md shadow-lg"
             >
-              <ul>
-                <li>
+              <ul class="-mt-6">
+                <li class="-mt-6">
                   <a
                     href="#"
-                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 -mt-6"
                     >Product 1</a
                   >
                 </li>
@@ -123,6 +122,7 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
               </ul>
             </div>
           </a>
+
           <router-link
             :to="{ name: 'news' }"
             active-class="active-link"
