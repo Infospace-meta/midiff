@@ -64,14 +64,65 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
             @click="toggle"
             >Our Courses
           </router-link>
-          <router-link
+          <!-- <router-link
             :to="{ name: 'departments' }"
             active-class="active-link"
             class="lg:mr-5 p-2 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
             @click="toggle"
             >Departments
-          </router-link>
+          </router-link> -->
+          <a
+            class="relative inline-block lg:mr-5 p-2 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
+          >
+            <!-- <span class="">Departments</span> -->
+            <button
+              class="inline-flex items-center justify-center p-2 rounded-md"
+            >
+              <span class="text-sm font-medium text-gray-700">Departments</span>
+              <svg
+                class="w-4 h-4 ml-2 -mr-1 text-gray-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
 
+            <div
+              class="absolute right-[35%] z-10 w-40 mt-2 bg-white border border-gray-300 rounded-md shadow-lg"
+            >
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >Product 1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >Product 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >Product 3</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </a>
           <router-link
             :to="{ name: 'news' }"
             active-class="active-link"
