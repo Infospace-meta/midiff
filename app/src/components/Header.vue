@@ -60,20 +60,32 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
           <router-link
             :to="{ name: 'courses' }"
             active-class="active-link"
-            class="lg:mr-5 p-4 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
+            class="lg:mr-5 p-2 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
             @click="toggle"
             >Our Courses
           </router-link>
           <router-link
+            :to="{ name: 'departments' }"
+            active-class="active-link"
+            class="lg:mr-5 p-2 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
+            @click="toggle"
+            >Departments
+          </router-link>
+          <!-- <ul id="dropdown-products">
+        <li><a href="#">Product 1</a></li>
+        <li><a href="#">Product 2</a></li>
+        <li><a href="#">Product 3</a></li>
+      </ul> -->
+          <router-link
             :to="{ name: 'news' }"
             active-class="active-link"
-            class="lg:mr-5 p-4 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
+            class="lg:mr-5 p-2 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
             @click="toggle"
             >News and Updates
           </router-link>
           <router-link
             :to="{ name: 'home' }"
-            class="lg:mr-5 p-4 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
+            class="lg:mr-5 p-2 sm:max-lg:border-b border-orange-700 font-medium hover:text-cyan-600"
             @click="toggle"
             >Contact
           </router-link>
