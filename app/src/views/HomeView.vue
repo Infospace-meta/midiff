@@ -1,5 +1,4 @@
 <template>
-  <h1 class="text-red-700">Home</h1>
   <Blogs />
   <Programs />
   <Partners />
