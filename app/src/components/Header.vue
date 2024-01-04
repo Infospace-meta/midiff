@@ -1,11 +1,10 @@
-<!-- <template>
-  <div>
+<template>
+  <div class="fixed w-full top-0 z-50">
+    <ContactNav />
     <header
-      class="w-full h-auto fixed z-30 top-0 text-gray-700 border-b border-gray-200 bg-white shadow-sm body-font"
+      class="text-gray-700 border-b border-gray-200 bg-white shadow-sm body-font"
     >
-      <div
-        class="flex flex-row px-2 items-center justify-evenly mt-4 md:mx-auto"
-      >
+      <div class="flex flex-row items-center justify-evenly mx-auto max-w-7xl">
         <router-link :to="{ name: 'home' }"> <NavbarIcon /></router-link>
         <NavbarItems />
       </div>
@@ -14,13 +13,14 @@
 </template>
 
 <script setup>
+import ContactNav from "../components/navbar/navcontact.vue";
 import NavbarIcon from "../components/navbar/navbarIcon.vue";
 import NavbarItems from "../components/navbar/navbarItem.vue";
 </script>
 
-<style lang="scss" scoped></style> -->
+<style lang="scss" scoped></style>
 
-<template>
+<!-- <template>
   <div>
     <header
       class="w-full h-16 fixed z-30 top-0 text-gray-700 border-b border-gray-200 bg-white shadow-sm body-font"
@@ -30,9 +30,13 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
       >
         <a class="flex pl-4 items-center font-medium text-gray-900 title-font">
           <img
+           
             src="../assets/icon.png"
+           
             alt="icon"
+           
             class="w-auto h-10 text-gray-900 fill-current"
+         
           />
           <h1 class="text-sm text-yellow-700">
             MIDIFF INSTITUTE OF PROFFESIONAL STUDIES
@@ -196,9 +200,7 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
         <div
           class="flex items-center right-0 h-full pl-4 ml-6 border-l-0 lg:border-l border-orange-700"
         >
-          <!-- <a href="#_" class="mr-5 font-medium hover:text-cyan-600"
-            >0704040404</a
-          > -->
+
           <a
             href="#_"
             class="px-4 py-2 text-xs font-bold text-white uppercase transition-all duration-150 bg-cyan-600 rounded shadow outline-none active:bg-cyan-600 hover:shadow-md focus:outline-none ease"
@@ -226,25 +228,14 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
                 d="M1 0h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0 8h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0-4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2z"
               />
             </svg>
-            <!-- <svg             
-              class="w-6 h-6"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-            >
-              <path
-                fill="#000000"
-                fill-rule="evenodd"
-                d="M16.293 17.707a1 1 0 001.414-1.414L11.414 10l6.293-6.293a1 1 0 00-1.414-1.414L10 8.586 3.707 2.293a1 1 0 00-1.414 1.414L8.586 10l-6.293 6.293a1 1 0 101.414 1.414L10 11.414l6.293 6.293z"
-              />
-            </svg> -->
+
           </button>
         </div>
       </div>
     </header>
   </div>
-</template>
-
+</template> -->
+<!-- 
 <script setup>
 let close = true;
 let open = true;
@@ -260,4 +251,4 @@ const toggle = () => {
 .active-link {
   color: #b7791f;
 }
-</style>
+</style> -->

@@ -1,0 +1,15 @@
+<template>
+  <div class="w-full lg:h-96 mx-auto">
+    <div
+      class="flex flex-col justify-center col-span-12 align-middle bg-no-repeat bg-cover lg:col-span-6 lg:h-96 text-center text-5xl"
+      style="
+        background-image: url('https://source.unsplash.com/random/640x480');
+        background-position: center center;
+        background-blend-mode: multiply;
+        background-size: cover;
+      "
+    >
+      About US
+    </div>
+  </div>
+</template>
