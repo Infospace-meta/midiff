@@ -20,8 +20,13 @@ const routes = [
   { path: "/departments", name: "departments", component: DeptView },
   { path: "/news", name: "news", component: NewsView },
   { path: "/jobs", name: "jobs", component: JobsComponent },
-  { path: "/posts/:id", name: "details", component: DetailsView, props: true },
+  { path: "/posts/:id", name: "article", component: DetailsView, props: true },
   { path: "/jobs/:id", name: "job_details", component: JobDetailsComponent },
+  {
+    path: '/page/:page',
+    name: 'page',
+    component: () => import('../components/blogs/newsUpdates.vue'),
+  },
 ];
 
 /**Initialize here */
