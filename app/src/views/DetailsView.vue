@@ -4,11 +4,13 @@
     <h3>{{ post.title }}</h3>
     <p>{{ post.body }}</p>
   </div>
+  <BlogPage />
 </template>
 
 <script setup>
 import { onMounted } from "vue";
 import { getPost } from "../providers/api/getPosts";
+import BlogPage from "../components/blogs/blogPage.vue";
 
 const props = defineProps(["id"]);
 

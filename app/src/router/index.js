@@ -22,11 +22,7 @@ const routes = [
   { path: "/jobs", name: "jobs", component: JobsComponent },
   { path: "/posts/:id", name: "article", component: DetailsView, props: true },
   { path: "/jobs/:id", name: "job_details", component: JobDetailsComponent },
-  {
-    path: '/page/:page',
-    name: 'page',
-    component: () => import('../components/blogs/newsUpdates.vue'),
-  },
+
 ];
 
 /**Initialize here */
