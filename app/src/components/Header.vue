@@ -98,10 +98,10 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
             <!-- DROPDOWN MENU -->
             <div
               id="departments"
-              class="absolute hidden z-10 w-40 p-0 mt-4 bg-white border border-gray-300 rounded-md shadow-lg"
+              class="absolute hidden z-10 w-40 p-0 mt-4 bg-white rounded-md shadow-lg"
               @mouseleave="showDropdown()"
             >
-              <ul class="">
+              <ul class="divide-y divide-yellow-700 border-2">
                 <li class="">
                   <a
                     href="#"
