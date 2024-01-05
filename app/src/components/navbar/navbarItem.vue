@@ -2,7 +2,7 @@
   <div>
     <nav
       :class="{ hidden: close, 'sm:flex': open }"
-      class="sm:max-lg:z-20 flex flex-col lg:flex lg:flex-row sm:max-lg:w-4/5 absolute lg:relative lg:top-auto top-24 right-0 left-16 h-screen md:h-auto bg-white"
+      class="sm:max-lg:z-20 flex flex-col lg:flex lg:flex-row sm:max-lg:w-4/5 absolute lg:relative lg:top-auto top-28 right-0 left-16 h-screen md:h-auto bg-white"
       id="nav-content"
     >
       <router-link
@@ -15,7 +15,48 @@
         class="lg:mr-5 p-4 text-lg max-lg:border-b border-yellow-700 font-medium hover:text-indigo-700"
         >Our Courses</router-link
       >
-      <NavbarMenu />
+      <a
+        class="lg:mr-5 p-4 text-lg max-lg:border-b border-yellow-700 font-medium hover:text-indigo-700"
+      >
+        <button
+          class="inline-flex items-center justify-center rounded-md"
+          @mouseover="showDropdown()"
+        >
+          <span class="text-lg font-medium text-gray-700">Departments</span>
+        </button>
+
+        <!-- DROPDOWN MENU -->
+        <div
+          id="departments"
+          class="relative md:absolute hidden z-10 w-full md:w-auto pt-5 pr-5 bg-white md:shadow-lg"
+          @mouseleave="showDropdown()"
+        >
+          <ul class="">
+            <li class="">
+              <a
+                href="#"
+                class="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
+                >Food Department</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
+                >ICT department</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
+                >Joe's Department</a
+              >
+            </li>
+          </ul>
+        </div>
+      </a>
+      <!-- <NavbarMenu /> -->
       <router-link
         :to="{ name: 'news' }"
         class="lg:mr-5 p-4 text-lg max-lg:border-b border-yellow-700 font-medium hover:text-indigo-700"
@@ -24,9 +65,10 @@
       <router-link
         :to="{ name: 'home' }"
         class="lg:mr-5 p-2 text-lg max-lg:border-b border-yellow-700 font-medium hover:text-indigo-700"
-        ><button class="p-2 bg-yellow-500 rounded-lg text-indigo-700">Enroll Now</button></router-link
+        ><button class="p-2 bg-yellow-500 rounded-lg text-indigo-700">
+          Enroll Now
+        </button></router-link
       >
-      
     </nav>
 
     <div
@@ -60,5 +102,8 @@ const open = ref(false);
 const toggleMenu = () => {
   close.value = !close.value;
   open.value = !open.value;
+};
+const showDropdown = () => {
+  document.getElementById("departments").classList.toggle("hidden");
 };
 </script>
