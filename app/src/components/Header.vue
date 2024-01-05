@@ -105,21 +105,21 @@ import NavbarItems from "../components/navbar/navbarItem.vue";
                 <li class="">
                   <a
                     href="#"
-                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:text-cyan-600"
                     >Product 1</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:text-cyan-600"
                     >Product 2</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:text-cyan-600"
                     >Product 3</a
                   >
                 </li>
