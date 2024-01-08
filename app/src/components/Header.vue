@@ -81,11 +81,13 @@
             >
               <ul class="divide-y divide-yellow-700 border-2">
                 <li class="">
-                  <a
-                    href="#"
+                  <router-link
+                    :to="{ name: 'departments' }"
+                    active-class="active-link"
                     class="block px-4 py-2 text-sm text-gray-700 hover:text-cyan-600"
-                    >Product 1</a
-                  >
+                    @click="toggle"
+                    >Product 1
+                  </router-link>
                 </li>
                 <li>
                   <a
