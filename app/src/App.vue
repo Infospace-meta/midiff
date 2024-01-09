@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="min-h-screen bg-white">
     <Header />
     <div class="mt-16">
@@ -14,11 +14,11 @@ import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import ImmanuelHeader from "./components/ImmanuelHeader.vue";
 import ContactNav from "./components/navbar/navcontact.vue";
-</script>
+</script> -->
 
 <style scoped></style>
 
-<!-- <template>
+<template>
   <div class="min-h-screen bg-white">
     <ContactNav />
     <ImmanuelHeader :isFixed="isHeaderFixed" />
@@ -43,4 +43,4 @@ const handleScroll = () => {
 };
 
 window.addEventListener("scroll", handleScroll);
-</script> -->
+</script>

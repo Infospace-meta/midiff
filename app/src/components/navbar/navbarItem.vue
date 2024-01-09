@@ -66,9 +66,13 @@
         :to="{ name: 'home' }"
         class="lg:mr-5 p-2 text-lg max-lg:border-b border-yellow-700 font-medium hover:text-indigo-700"
         ><button class="p-2 bg-yellow-500 rounded-lg text-indigo-700">
-          Enroll Now
+          Enroll
         </button></router-link
       >
+      <router-link
+        :to="{ name: 'news' }"
+        class="lg:mr-5 p-4 text-lg max-lg:border-b border-yellow-700 font-medium hover:text-indigo-700"
+      ></router-link>
     </nav>
 
     <div

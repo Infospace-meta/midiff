@@ -3,7 +3,7 @@
     <div class="container grid grid-cols-12 mx-auto gap-y-6 md:gap-10">
       <div class="col-span-12 md:col-span-1"></div>
       <div
-        class="relative flex col-span-12 xl:col-span-7 lg:col-span-5 md:col-span-9 min-h-96"
+        class="flex col-span-12 xl:col-span-7 lg:col-span-5 md:col-span-9 min-h-96"
       >
         <div class="flex flex-col gap-10">
           <article
@@ -49,7 +49,7 @@
         </div>
       </div>
       <div class="hidden py-2 xl:col-span-3 lg:col-span-4 md:hidden lg:block">
-        <div class="fixed">
+        <div class="fixed max-w-sm mx-auto">
           <div class="flex flex-col divide-y divide-gray-200">
             <div class="flex px-1 py-4">
               <img
