@@ -40,6 +40,40 @@
         </SplideSlide>
       </Splide>
     </div>
+    <div class="max-w-7xl mx-auto py-10">
+      <div class="flex flex-col-reverse md:grid grid-cols-2">
+        <div class="flex flex-col gap-8 bg-violet-900 p-8 text-white text-lg">
+          <h1 class="font-semibold">
+            Welcome to Midiff institute of Proffessional Studies
+          </h1>
+          <p>
+            we area leading vocational education and training institution
+            dedicated to empoweing individuals with the skills and Knowledge
+            required for a successful and fulfilling career.<br /><br />
+            At Midiff institute of Proffessional Studies we firmly believe in
+            the power of technical and vocational education to shape lives and
+            contribute to the overall development of our society.<br /><br />
+            Our Institution has been at the forefront of providing high quality
+            training programmes in various disciplines , catering to the
+            evolving needs of industries and the job market.
+          </p>
+          <router-link :to="{ name: 'about' }">
+            <h1
+              class="text-white border-white border p-2 text-center w-28 rounded-full"
+            >
+              About Us...
+            </h1>
+          </router-link>
+        </div>
+        <div>
+          <img
+          class="h-full w-auto"
+            src="https://scontent.fmba2-1.fna.fbcdn.net/v/t39.30808-6/396991479_670486655286894_3952592817751489433_n.jpg?stp=dst-jpg_p526x395&_nc_cat=109&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=XwbDCQzWdkAAX99Ljo1&_nc_ht=scontent.fmba2-1.fna&oh=00_AfCXh6yJVaJyZluYU-IaF3iNCJUIeOVIcfDTrxZAve4yWQ&oe=65A26017"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -58,7 +92,7 @@ const slides = ref([
   {
     id: 2,
     image: "../src/assets/me.png",
-    title: "January 2024 Intake in Progress",
+    title: "Diploma courses Available ",
     description: "Description 2",
   },
   {

@@ -1,6 +1,7 @@
 <template>
-  <section class="dark:text-gray-900">
+  <section class="dark:text-gray-900 bg-slate-100">
     <div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
+      <h1 class="text-3xl">News and Updates</h1>
       <a
         rel="noopener noreferrer"
         href="#"
