@@ -31,26 +31,40 @@
           class="relative md:absolute hidden z-10 w-full md:w-auto pt-5 pr-5 bg-white md:shadow-lg"
           @mouseleave="showDropdown()"
         >
-          <ul class="">
+          <ul class="lg:py-5 pr-10">
             <li class="">
               <a
                 href="#"
                 class="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                >Food Department</a
+                >Cosmetology</a
               >
             </li>
             <li>
               <a
                 href="#"
                 class="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                >ICT department</a
+                >Culinary School</a
               >
             </li>
             <li>
               <a
                 href="#"
                 class="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                >Joe's Department</a
+                >Engineering School</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
+                >Design School</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
+                >ICT School</a
               >
             </li>
           </ul>
@@ -65,7 +79,7 @@
       <router-link
         :to="{ name: 'home' }"
         class="lg:mr-5 p-2 text-lg max-lg:border-b border-yellow-700 font-medium hover:text-indigo-700"
-        ><button class="p-2 bg-yellow-500 rounded-lg text-indigo-700">
+        ><button class="p-2 bg-indigo-700 rounded-lg text-white">
           Enroll
         </button></router-link
       >

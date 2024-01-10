@@ -22,7 +22,7 @@ import ContactNav from "./components/navbar/navcontact.vue";
   <div class="min-h-screen bg-white">
     <ContactNav />
     <ImmanuelHeader :isFixed="isHeaderFixed" />
-    <div class="mt-16" @scroll="handleScroll">
+    <div class="" @scroll="handleScroll">
       <RouterView />
     </div>
     <Footer />

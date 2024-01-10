@@ -1,6 +1,6 @@
 <template>
   <ProgramContent />
-  <ApplicationMode />
+  <!-- <ApplicationMode /> -->
 </template>
 
 <script setup>
