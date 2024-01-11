@@ -1,5 +1,5 @@
 # Midiff Institute
-The Institute Website
+The Official Midiff Institute Website
 
 ## Initialising the repository
 > cd app
