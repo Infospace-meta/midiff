@@ -17,7 +17,7 @@ import ContactNav from "../components/navbar/navcontact.vue";
 import NavbarIcon from "../components/navbar/navbarIcon.vue";
 import NavbarItems from "../components/navbar/navbarItem.vue";
 
-import { ref, defineProps } from "vue";
+import { ref } from "vue";
 
 const { isFixed } = defineProps(["isFixed"]);
 </script>
