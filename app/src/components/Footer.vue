@@ -45,7 +45,7 @@
               <ul class="space-y-4 text-sm">
                 <li>
                   <router-link
-                    :to="{ name: 'blog' }"
+                    :to="{ name: 'home' }"
                     class="text-gray-100 transition hover:text-orange-400"
                   >
                     Our vision
@@ -54,7 +54,7 @@
 
                 <li>
                   <router-link
-                    :to="{ name: 'blog' }"
+                    :to="{ name: 'home' }"
                     class="text-gray-100 transition hover:text-orange-400"
                   >
                     Statistic
@@ -63,7 +63,7 @@
 
                 <li>
                   <router-link
-                    :to="{ name: 'blog' }"
+                    :to="{ name: 'home' }"
                     class="text-gray-100 transition hover:text-orange-400"
                   >
                     Our Mission
@@ -80,7 +80,7 @@
               <ul class="space-y-4 text-sm">
                 <li>
                   <router-link
-                    :to="{ name: 'blog' }"
+                    :to="{ name: 'home' }"
                     class="text-gray-100 transition hover:text-orange-400"
                   >
                     The Mummy-Toto Lactation
@@ -89,7 +89,7 @@
 
                 <li>
                   <router-link
-                    :to="{ name: 'blog' }"
+                    :to="{ name: 'home' }"
                     class="text-gray-100 transition hover:text-orange-400"
                   >
                     Empower Women and Youths
@@ -98,7 +98,7 @@
 
                 <li>
                   <router-link
-                    :to="{ name: 'blog' }"
+                    :to="{ name: 'home' }"
                     class="text-gray-100 transition hover:text-orange-400"
                   >
                     Nurturing Children
