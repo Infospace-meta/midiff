@@ -39,7 +39,7 @@
           class="mt-16 flex flex-col gap-8 md:flex-row justify-evenly items-center"
         >
           <div class="text-center sm:text-left">
-            <p class="text-lg font-medium text-orange-300">About Us</p>
+            <p class="text-lg font-medium text-orange-300">Explore</p>
 
             <nav aria-label="Footer About Nav" class="mt-8">
               <ul class="space-y-4 text-sm">
@@ -48,7 +48,7 @@
                     :to="{ name: 'home' }"
                     class="text-gray-100 transition hover:text-orange-400"
                   >
-                    Our vision
+                   About us
                   </router-link>
                 </li>
 

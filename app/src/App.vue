@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen bg-white">
-    <ContactNav />
+    <!-- <ContactNav /> -->
     <Header />
     <div class="mt-16">
       <RouterView />
