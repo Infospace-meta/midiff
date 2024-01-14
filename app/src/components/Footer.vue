@@ -57,7 +57,17 @@
                     :to="{ name: 'home' }"
                     class="text-gray-100 transition hover:text-orange-400"
                   >
-                    Statistic
+                   Our Courses
+                  </router-link>
+                </li>
+
+
+                <li>
+                  <router-link
+                    :to="{ name: 'home' }"
+                    class="text-gray-100 transition hover:text-orange-400"
+                  >
+                    News and Updates
                   </router-link>
                 </li>
 
@@ -66,7 +76,7 @@
                     :to="{ name: 'home' }"
                     class="text-gray-100 transition hover:text-orange-400"
                   >
-                    Our Mission
+                    Contact
                   </router-link>
                 </li>
               </ul>
