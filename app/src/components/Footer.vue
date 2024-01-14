@@ -9,7 +9,7 @@
           class="flex flex-col items-center gap-4 rounded-lg bg-cyan-600 p-6 shadow-lg sm:flex-row sm:justify-between"
         >
           <strong class="text-xl text-white sm:text-xl">
-            Want to Join Our Nanny school
+            Grab an opportunity by enrolling
           </strong>
           <a
             href="https://goesselambach.vercel.app/"
@@ -212,7 +212,7 @@
             <p
               class="mt-4 text-center text-sm text-gray-200 sm:mt-0 sm:text-right"
             >
-              Copyright &copy; The mother-goose kenya
+              Copyright &copy; Midiff Institute
               {{ new Date().getFullYear() }}. All rights reserved. <br />Created
               by Infospace-meta
             </p>
