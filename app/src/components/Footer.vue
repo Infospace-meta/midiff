@@ -84,7 +84,7 @@
           </div>
 
           <div class="text-center sm:text-left">
-            <p class="text-lg font-medium text-orange-300">Our Services</p>
+            <p class="text-lg font-medium text-orange-300">Departments</p>
 
             <nav aria-label="Footer Services Nav" class="mt-8">
               <ul class="space-y-4 text-sm">
