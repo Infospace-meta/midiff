@@ -6,7 +6,7 @@
     <div class="relative inset-0 bg-black opacity-80">
       <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div
-          class="flex flex-col items-center gap-4 rounded-lg bg-cyan-600 p-6 shadow-lg sm:flex-row sm:justify-between"
+          class="flex flex-col items-center gap-4 rounded-lg bg-violet-900 p-6 shadow-lg sm:flex-row sm:justify-between"
         >
           <strong class="text-xl text-white sm:text-xl">
             Grab an opportunity by enrolling
@@ -14,7 +14,7 @@
           <a
             href="https://goesselambach.vercel.app/"
             target="_blank"
-            class="inline-flex items-center gap-2 rounded-full border border-white bg-white px-8 py-3 text-cyan-600 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90"
+            class="inline-flex items-center gap-2 rounded-full border border-white bg-white px-8 py-3 text-violet-900 hover:bg-transparent hover:text-white focus:outline-none active:bg-violet-500"
           >
             <span class="text-sm font-medium"> Enroll </span>
 
