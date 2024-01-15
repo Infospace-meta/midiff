@@ -86,21 +86,28 @@
                     active-class="active-link"
                     class="block px-4 py-2 text-sm text-gray-700 hover:text-cyan-600"
                     @click="toggle"
-                    >Product 1
+                    >Cosmetology
                   </router-link>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="block px-4 py-2 text-sm text-gray-700 hover:text-cyan-600"
-                    >Product 2</a
+                    >Fashion Design</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
                     class="block px-4 py-2 text-sm text-gray-700 hover:text-cyan-600"
-                    >Product 3</a
+                    >Hospitality</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:text-cyan-600"
+                    >Business Studies</a
                   >
                 </li>
               </ul>
@@ -229,7 +236,7 @@
         >
           <a
             href="#_"
-            class="px-4 py-2 text-xs font-bold text-white uppercase rounded-full transition-all duration-150 bg-cyan-600 shadow outline-none active:bg-cyan-600 hover:shadow-md focus:outline-none ease"
+            class="px-4 py-2 text-xs font-bold text-white uppercase rounded-full transition-all duration-150 bg-violet-900 shadow outline-none active:bg-violet-900 hover:shadow-md focus:outline-none ease"
           >
             Enroll
           </a>
