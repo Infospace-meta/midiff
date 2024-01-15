@@ -48,7 +48,7 @@
                     :to="{ name: 'home' }"
                     class="text-gray-100 transition hover:text-orange-400"
                   >
-                   About us
+                    About us
                   </router-link>
                 </li>
 
@@ -57,10 +57,9 @@
                     :to="{ name: 'home' }"
                     class="text-gray-100 transition hover:text-orange-400"
                   >
-                   Our Courses
+                    Our Courses
                   </router-link>
                 </li>
-
 
                 <li>
                   <router-link
@@ -93,7 +92,7 @@
                     :to="{ name: 'home' }"
                     class="text-gray-100 transition hover:text-orange-400"
                   >
-                    The Mummy-Toto Lactation
+                    Business Studies
                   </router-link>
                 </li>
 
@@ -102,7 +101,7 @@
                     :to="{ name: 'home' }"
                     class="text-gray-100 transition hover:text-orange-400"
                   >
-                    Empower Women and Youths
+                    Fashion Design
                   </router-link>
                 </li>
 
@@ -111,7 +110,15 @@
                     :to="{ name: 'home' }"
                     class="text-gray-100 transition hover:text-orange-400"
                   >
-                    Nurturing Children
+                    Hospitality
+                  </router-link>
+                </li>
+                <li>
+                  <router-link
+                    :to="{ name: 'home' }"
+                    class="text-gray-100 transition hover:text-orange-400"
+                  >
+                    Cosmetology
                   </router-link>
                 </li>
               </ul>
