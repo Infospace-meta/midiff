@@ -9,6 +9,7 @@
       </div>
       <div class="col-span-5">
         <div class="flex flex-col justify-center max-w-7xl mx-auto">
+          <BankDetails />
           <h1 class="p-4 text-4xl">BACHELOR OF DENTAL SURGERY</h1>
           <div class="flex border-t-2 border-gray-300 border-r-2 flex-wrap">
             <div
@@ -110,6 +111,7 @@
 <script setup>
 import { ref } from "vue";
 import ProgramList from "./programList.vue";
+import BankDetails from "../fees/bankDetails.vue";
 
 const category = ref([
   {
