@@ -27,7 +27,7 @@ const details = ref([
     content: [
       {
         type: "heading",
-        text: "BACKGROUND",
+        text: "ACCESS BANK  PLC  (Formerly Transnational Bank)",
         style: { color: "black" },
       },
       {
