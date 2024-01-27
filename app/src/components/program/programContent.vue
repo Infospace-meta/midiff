@@ -68,9 +68,11 @@
                     <th
                       v-for="(header, index) in content.data.headers"
                       :key="index"
+                      :colspan="header.colspan || 1"
+                      :rowspan="header.rowspan || 1"
                       class="border border-gray-400 px-4 py-2"
                     >
-                      {{ header }}
+                      {{ header.text || header }}
                     </th>
                   </tr>
                 </thead>
@@ -82,13 +84,16 @@
                     <td
                       v-for="(cell, cellIndex) in row"
                       :key="cellIndex"
+                      :colspan="cell.colspan || 1"
+                      :rowspan="cell.rowspan || 1"
                       class="border border-gray-400 px-4 py-2"
                     >
-                      {{ cell }}
+                      {{ cell.text || cell }}
                     </td>
                   </tr>
                 </tbody>
               </table>
+
               <!-- Add more conditions for other content types if needed -->
             </div>
             <pre class="mt-20 font-sans">
@@ -301,11 +306,16 @@ const category = ref([
         data: {
           headers: ["Year", "Semester 1", "Semester 2", "Total"],
           rows: [
-            ["1", "325,000", "288,000", "613,000"],
-            ["2", "324,000", "288,000", "612,000"],
-            ["3", "324,000", "288,000", "612,000"],
-            ["4", "324,000", "288,000", "612,000"],
-            ["total", "", "", "3,048,000"],
+            [
+              "1",
+              { text: "325,000", colspan: 1, rowspan: 1 },
+              { text: "288,000", colspan: 1, rowspan: 1 },
+              "613,000",
+            ],
+            ["2", { text: "324,000", colspan: 2, rowspan: 1 }, "", "612,000"],
+            ["3", "324,000", { text: "288,000", colspan: 1, rowspan: 2 }, ""],
+            ["4", { text: "324,000", colspan: 1, rowspan: 2 }, "", ""],
+            ["total", { text: "", colspan: 3, rowspan: 1 }, "", "3,048,000"],
             // Add more rows as needed
           ],
         },

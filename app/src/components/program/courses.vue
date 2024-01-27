@@ -1,0 +1,219 @@
+<template>
+  <div class="mx-auto max-w-7xl px-5">
+    <div class="p-8 py-12">
+      <div
+        class="flex items-center text-indigo-700 gap-5 text-3xl justify-center py-5 font-semibold"
+      >
+        <h1>COURSES</h1>
+        <hr class="w-full border-r-2 border-indigo-700" />
+      </div>
+
+      <div v-for="content in contents" :key="content.type">
+        <h1
+          v-if="content.type === 'heading'"
+          class="text-indigo-700 font-semibold text-lg py-2"
+        >
+          {{ content.text }}
+        </h1>
+        <p v-if="content.type === 'paragraph'" :style="content.style">
+          {{ content.text }}
+        </p>
+        <table
+          v-if="content.type === 'table'"
+          class="border-collapse w-full mt-4 overflow-auto"
+        >
+          <thead>
+            <tr>
+              <th
+                v-for="(header, index) in content.data.headers"
+                :key="index"
+                :colspan="header.colspan || 1"
+                :rowspan="header.rowspan || 1"
+                class="bg-slate-200 px-4 py-2"
+              >
+                {{ header.text || header }}
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(row, rowIndex) in content.data.rows" :key="rowIndex">
+              <td
+                v-for="(cell, cellIndex) in row"
+                :key="cellIndex"
+                :colspan="cell.colspan || 1"
+                :rowspan="cell.rowspan || 1"
+                class="border border-gray-200 px-4 py-2"
+              >
+                <!-- Check if the cell has a 'clickable' property -->
+                <router-link
+                  v-if="cell.clickable"
+                  :to="`/course/${cell.text}`"
+                  class="hover:text-yellow-600"
+                >
+                  {{ cell.text || cell }}
+                </router-link>
+                <!-- If not clickable, just display the text -->
+                <span v-else>
+                  {{ cell.text || cell }}
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { ref } from "vue";
+
+const contents = ref([
+  {
+    type: "paragraph",
+    text: "At Midiff Institute of Professional Studies, we pride ourselves on being a leading vocational education and training institution dedicated to empowering individuals for successful and fulfilling careers. Our firm belief in the transformative power of technical and vocational education has positioned us at the forefront of providing high-quality training programs across various disciplines. Recognizing the dynamic nature of industries and the job market, we have tailored our offerings to cater to evolving needs, ensuring our students are equipped with the latest skills and knowledge demanded by today's competitive workforce.",
+    style: { color: "black" },
+  },
+  {
+    type: "table",
+    data: {
+      headers: [
+        { text: "Course", colspan: 2, rowspan: 2 },
+        { text: "Level", rowspan: 2 },
+        { text: "Minimum Requirements", rowspan: 2 },
+        { text: "Duration", rowspan: 2 },
+        { text: "Tution Fee (Per Semester)", rowspan: 2 },
+        { text: "Intake", rowspan: 2 },
+        { text: "Exam Body", rowspan: 2 },
+      ],
+      rows: [
+        [
+          { text: "1", rowspan: 4 },
+          {
+            text: "Information & Communication Technology",
+            clickable: true,
+            style: {
+              "font-weight": "bold",
+              cursor: "pointer",
+              transition: "color 0.3s ease-in-out",
+            },
+            rowspan: 4,
+          },
+          {
+            text: "Certificate",
+
+            rowspan: 2,
+          },
+          {
+            text: "Module I- KCSE D plain",
+          },
+          {
+            text: "3 Terms and Attachment",
+          },
+          {
+            text: "20,000",
+          },
+          {
+            text: "Jan May September",
+
+            rowspan: 2,
+          },
+          {
+            text: "KNEC",
+
+            rowspan: 2,
+          },
+        ],
+        [
+          {
+            text: "Module I- KCSE D plain",
+          },
+          {
+            text: "3 Terms and Attachment",
+          },
+          {
+            text: "20,000",
+          },
+        ],
+        [
+          // This row will be automatically skipped due to rowspan
+
+          {
+            text: "Diploma",
+            rowspan: 2,
+          },
+          {
+            text: "Module I- KCSE D plain",
+          },
+          {
+            text: "3 Terms and Attachment",
+          },
+          {
+            text: "20,000",
+          },
+          {
+            text: "Jan May September",
+
+            rowspan: 2,
+          },
+          {
+            text: "KNEC",
+
+            rowspan: 2,
+          },
+        ],
+        [
+          {
+            text: "Module I- KCSE D plain",
+          },
+          {
+            text: "3 Terms and Attachment",
+          },
+          {
+            text: "20,000",
+          },
+        ],
+
+        // Add more rows as needed
+        [
+          { text: "2", rowspan: 3 },
+          {
+            text: "Information & Communication Technology",
+            clickable: true,
+            style: {
+              "font-weight": "bold",
+              cursor: "pointer",
+              transition: "color 0.3s ease-in-out",
+            },
+            rowspan: 3,
+          },
+          {
+            text: "Certificate",
+
+            rowspan: 3,
+          },
+          {
+            text: "Module I- KCSE D plain",
+          },
+          {
+            text: "3 Terms and Attachment",
+          },
+          {
+            text: "20,000",
+          },
+          {
+            text: "Jan May September",
+
+            rowspan: 2,
+          },
+          {
+            text: "KNEC",
+
+            rowspan: 2,
+          },
+        ],
+      ],
+    },
+  },
+]);
+</script>

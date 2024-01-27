@@ -1,6 +1,5 @@
-<template>
+<!-- <template>
   <div class="min-h-screen bg-white">
-    <!-- <ContactNav />  -->
     <Header />
     <div class="mt-16">
       <RouterView />
@@ -15,9 +14,9 @@ import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 </script>
 
-<style scoped></style>
+<style scoped></style> -->
 
-<!-- <template>
+<template>
   <div class="min-h-screen bg-white">
     <ContactNav />
     <ImmanuelHeader :isFixed="isHeaderFixed" />
@@ -42,4 +41,4 @@ const handleScroll = () => {
 };
 
 window.addEventListener("scroll", handleScroll);
-</script> -->
+</script>
