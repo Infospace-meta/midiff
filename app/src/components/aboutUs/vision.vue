@@ -3,16 +3,17 @@
     <div class="bg-purple-800 text-white p-14 text-xl">
       <h1 class="py-2 text-2xl font-semibold underline">Vision</h1>
       <p>
-        To be the leading TVET College offering accredited, high quality
-        cutting-edge technical and business training that meets the needs of
-        commerce and industry
+        "To be a globally recognized center of excellence in Technical and
+        Vocational Education and Training, empowering individuals with practical
+        skills, fostering innovation, and driving socio-economic development."
       </p>
     </div>
     <div class="bg-yellow-600 text-white p-14 text-xl">
       <h1 class="py-2 text-2xl font-semibold underline">Mission</h1>
       <p>
-        To be a center of excellence for competence based training, creativity
-        and innovation for socio-economic transformation
+        Empowerment through Skill Development: We are dedicated to equipping
+        individuals with hands-on, industry-relevant skills that meet the
+        demands of the evolving job market.
       </p>
     </div>
     <div class="bg-indigo-900 text-white p-14 text-xl">

@@ -21,18 +21,18 @@
                 <div class="py-20">
                   <router-link :to="{ name: 'home' }"
                     ><button
-                      class="py-2 px-4 text-2xl bg-orange-700 rounded-lg text-white"
+                      class="py-2 px-4 text-2xl bg-indigo-700 rounded-lg text-white"
                     >
-                      Enroll
+                      {{ slide.button }}
                     </button></router-link
                   >
-                  <router-link :to="{ name: 'home' }" class="p-5"
+                  <!-- <router-link :to="{ name: 'home' }" class="p-5"
                     ><button
                       class="py-2 px-4 text-2xl bg-indigo-700 rounded-lg text-white"
                     >
-                      Enroll
+                      {{ slide.buttonTwo }}
                     </button></router-link
-                  >
+                  > -->
                 </div>
               </div>
             </div>
@@ -66,11 +66,7 @@
           </router-link>
         </div>
         <div>
-          <img
-          class="h-full w-auto"
-            src="https://scontent.fmba2-1.fna.fbcdn.net/v/t39.30808-6/396991479_670486655286894_3952592817751489433_n.jpg?stp=dst-jpg_p526x395&_nc_cat=109&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=XwbDCQzWdkAAX99Ljo1&_nc_ht=scontent.fmba2-1.fna&oh=00_AfCXh6yJVaJyZluYU-IaF3iNCJUIeOVIcfDTrxZAve4yWQ&oe=65A26017"
-            alt=""
-          />
+          <img class="h-full w-auto" src="../../assets/ladies.JPG" alt="" />
         </div>
       </div>
     </div>
@@ -85,21 +81,24 @@ import { Splide, SplideSlide } from "@splidejs/vue-splide";
 const slides = ref([
   {
     id: 1,
-    image: "../src/assets/me.png",
+    image: "../src/assets/ladies.jpg",
     title: "January 2024 Intake in Progress",
     description: "Description 1",
+    button: "Enroll",
   },
   {
     id: 2,
-    image: "../src/assets/me.png",
-    title: "Diploma courses Available ",
+    image: "../src/assets/graduates.JPG",
+    title: "class of 2023 graduation",
     description: "Description 2",
+    button: "View",
   },
   {
     id: 3,
-    image: "../src/assets/me.png",
-    title: "January 2024 Intake in Progress",
+    image: "../src/assets/forex.jpg",
+    title: "Diploma courses Available",
     description: "",
+    button: "Read more",
   },
   // Add more slides as needed
 ]);

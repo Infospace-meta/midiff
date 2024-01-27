@@ -1,7 +1,7 @@
 <template>
   <div v-for="course of courses" :key="course.id" class="hover:bg-slate-100">
     <p class="text-indigo-700 font-bold text-lg px-4 py-1 hover:cursor-pointer">
-        &#129054; {{ course.name }}
+      &#129054; {{ course.name }}
     </p>
     <p>{{ course.department }}</p>
     <p class="px-4 py-2 text-yellow-800 text-end">{{ course.tuition }}</p>
