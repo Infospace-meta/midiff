@@ -13,7 +13,7 @@ import NewsView from "../views/NewsView.vue";
 
 /**Define routes here */
 const routes = [
-  { path: "/", name: "posts", component: PostsView },
+  { path: "/", redirect: "/home" },
   { path: "/home", name: "home", component: HomeView },
   { path: "/about", name: "about", component: AboutView },
   { path: "/courses", name: "courses", component: CoursesView },
@@ -22,7 +22,6 @@ const routes = [
   { path: "/jobs", name: "jobs", component: JobsComponent },
   { path: "/posts/:id", name: "article", component: DetailsView, props: true },
   { path: "/jobs/:id", name: "job_details", component: JobDetailsComponent },
-
 ];
 
 /**Initialize here */
