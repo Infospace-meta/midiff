@@ -39,11 +39,7 @@
               </div>
             </div>
             <div class="">
-              <router-link
-                :to="{ name: 'article', params: { id: article.id } }"
-                class="bg-yellow-600 text-white p-2 rounded-sm"
-                >Read More</router-link
-              >
+              <a class="bg-yellow-600 text-white p-2 rounded-sm">Read More</a>
             </div>
           </article>
         </div>
