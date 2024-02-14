@@ -275,7 +275,6 @@ const toggle = () => {
   document.getElementById("nav-content").classList.toggle("sm:max-lg:hidden");
   document.getElementById("nav-content").classList.toggle("sm:max-lg:flex");
   close = false;
-  close = false;
 };
 
 const showDropdown = () => {
