@@ -150,6 +150,14 @@
 
       <!-- used for the opening and closing of the navbar in small devices  -->
       <div class="flex items-center right-0 h-full pl-4 ml-6">
+        <div class="p-2 lg:border-l-2 border-orange-700">
+          <a
+            href="#_"
+            class="px-4 py-2 text-xs font-bold text-white uppercase rounded-full transition-all duration-150 bg-violet-900 shadow outline-none active:bg-violet-900 hover:shadow-md focus:outline-none ease"
+          >
+            Enroll
+          </a>
+        </div>
         <button
           data-collapse-toggle="navbar-sticky"
           type="button"
