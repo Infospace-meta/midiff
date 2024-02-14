@@ -15,29 +15,35 @@
         class="container max-lg:h-screen max-lg:w-4/5 max-w-4xl right-0 max-lg:top-20 z-50 absolute lg:relative flex max-lg:flex-col lg:flex lg:justify-center border-t max-lg:shadow-2xl border-gray-300 bg-white"
       >
         <!-- home button -->
-        <router-link
+        <!-- <router-link
           :to="{ name: 'home' }"
           active-class="active-link"
-          class="text-lg text-gray-700 font-medium hover:text-cyan-600"
+          class="text-lg text-gray-700 font-medium"
           @click="toggleMenu"
           ><div
             class="inline-flex items-center justify-between max-lg:w-full p-5 rounded-md"
           >
-            <span class="text-lg font-medium text-gray-700">Home</span>
+            <span
+              class="text-lg font-medium text-gray-700 hover:text-cyan-600"
+              >Home</span
+            >
           </div>
+        </router-link> -->
+        <router-link
+          :to="{ name: 'home' }"
+          active-class="active-link"
+          class="p-5 font-medium hover:text-cyan-600 lg:mr-5"
+          @click="toggleMenu"
+          >Home
         </router-link>
 
         <!-- about us button -->
         <router-link
           :to="{ name: 'about' }"
           active-class="active-link"
-          class="text-lg text-gray-700 font-medium hover:text-cyan-600"
+          class="p-5 font-medium hover:text-cyan-600 lg:mr-5"
           @click="toggleMenu"
-          ><div
-            class="inline-flex items-center justify-between max-lg:w-full p-5 rounded-md"
-          >
-            <span class="text-lg font-medium text-gray-700">About Us</span>
-          </div>
+          >About Us
         </router-link>
 
         <!-- courses Button -->
@@ -46,7 +52,7 @@
             class="inline-flex items-center justify-between max-lg:w-full p-5 rounded-md"
             @click="toggleDropdown('about')"
           >
-            <span class="text-lg font-medium text-gray-700">Admission</span>
+            <span class="font-medium text-gray-700">Admission</span>
             <svg
               class="w-4 h-4 ml-2 -mr-1 text-gray-500"
               fill="none"
@@ -86,7 +92,7 @@
             class="inline-flex items-center justify-between max-lg:w-full p-5 rounded-md"
             @click="toggleDropdown('event')"
           >
-            <span class="text-lg font-medium text-gray-700">Info</span>
+            <span class="font-medium text-gray-700">Info</span>
             <svg
               class="w-4 h-4 ml-2 -mr-1 text-gray-500"
               fill="none"
@@ -121,30 +127,22 @@
           </div>
         </a>
 
+        <!-- info button -->
         <router-link
           :to="{ name: 'news' }"
           active-class="active-link"
-          class="text-lg text-gray-700 font-medium hover:text-cyan-600"
+          class="p-5 font-medium hover:text-cyan-600 lg:mr-5"
           @click="toggleMenu"
-          ><div
-            class="inline-flex items-center justify-between max-lg:w-full p-5 rounded-md"
-          >
-            <span class="text-lg font-medium text-gray-700"
-              >News & Updates</span
-            >
-          </div>
+          >News & Updates
         </router-link>
 
+        <!-- get in touch button -->
         <router-link
           :to="{ name: 'home' }"
           active-class="active-link"
-          class="text-lg text-gray-700 font-medium hover:text-cyan-600"
+          class="p-5 font-medium hover:text-cyan-600 lg:mr-5"
           @click="toggleMenu"
-          ><div
-            class="inline-flex items-center justify-between max-lg:w-full p-5 rounded-md"
-          >
-            <span class="text-lg font-medium text-gray-700">Get in Touch</span>
-          </div>
+          >Get in Touch
         </router-link>
       </nav>
 
@@ -239,3 +237,9 @@ const handleOutsideClick = (event) => {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.active-link {
+  color: #b7791f;
+}
+</style>
