@@ -78,8 +78,8 @@ const contents = ref([
     type: "table",
     data: {
       headers: [
-        { text: "Course", colspan: 2, rowspan: 2 },
-        { text: "Level", rowspan: 2 },
+        { text: "Level", rowspan: 2, colspan: 2 },
+        { text: "Course", rowspan: 2 },
         { text: "Minimum Requirements", rowspan: 2 },
         { text: "Duration", rowspan: 2 },
         { text: "Tution Fee (Per Semester)", rowspan: 2 },
@@ -88,128 +88,207 @@ const contents = ref([
       ],
       rows: [
         [
-          { text: "1", rowspan: 4 },
+          { text: "1", rowspan: 7 },
           {
-            text: "Information & Communication Technology",
+            text: "DIPLOMA",
             clickable: true,
             style: {
               "font-weight": "bold",
               cursor: "pointer",
               transition: "color 0.3s ease-in-out",
             },
-            rowspan: 4,
+            rowspan: 7,
           },
           {
-            text: "Certificate",
-
-            rowspan: 2,
+            text: "Electrical and Electronic Engineering (Power Option) ",
           },
           {
-            text: "Module I- KCSE D plain",
+            text: "KCSE C- and Above",
           },
           {
-            text: "3 Terms and Attachment",
+            text: "7 Terms ",
           },
           {
-            text: "20,000",
-          },
-          {
-            text: "Jan May September",
-
-            rowspan: 2,
-          },
-          {
-            text: "KNEC",
-
-            rowspan: 2,
-          },
-        ],
-        [
-          {
-            text: "Module I- KCSE D plain",
-          },
-          {
-            text: "3 Terms and Attachment",
-          },
-          {
-            text: "20,000",
-          },
-        ],
-        [
-          // This row will be automatically skipped due to rowspan
-
-          {
-            text: "Diploma",
-            rowspan: 2,
-          },
-          {
-            text: "Module I- KCSE D plain",
-          },
-          {
-            text: "3 Terms and Attachment",
-          },
-          {
-            text: "20,000",
+            text: "22,500",
           },
           {
             text: "Jan May September",
-
-            rowspan: 2,
           },
           {
-            text: "KNEC",
-
-            rowspan: 2,
+            text: "NITA",
           },
         ],
         [
           {
-            text: "Module I- KCSE D plain",
+            text: "Automative Engineering ",
           },
           {
-            text: "3 Terms and Attachment",
+            text: "KCSE C- and Above",
           },
           {
-            text: "20,000",
+            text: "7 Terms ",
+          },
+          {
+            text: "22,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "NITA",
+          },
+        ],
+        [
+          {
+            text: "Plumbing",
+          },
+          {
+            text: "KCSE C- and Above",
+          },
+          {
+            text: "7 Terms ",
+          },
+          {
+            text: "30,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "NITA",
+          },
+        ],
+        [
+          {
+            text: "Fashion and Design",
+          },
+          {
+            text: "KCSE C- and Above",
+          },
+          {
+            text: "6 Terms ",
+          },
+          {
+            text: "15,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "NITA",
+          },
+        ],
+        [
+          {
+            text: "Hairdressing and Beauty Therapy",
+          },
+          {
+            text: "KCSE C- and Above",
+          },
+          {
+            text: "6 Terms ",
+          },
+          {
+            text: "22,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "NITA",
+          },
+        ],
+        [
+          {
+            text: "Food and Beverage",
+          },
+          {
+            text: "KCSE C- and Above",
+          },
+          {
+            text: "3 Terms ",
+          },
+          {
+            text: "18,000",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "Institution",
+          },
+        ],
+        [
+          {
+            text: "Catering",
+          },
+          {
+            text: "KCSE C- and Above",
+          },
+          {
+            text: "2 Terms ",
+          },
+          {
+            text: "18,000",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "Institution",
           },
         ],
 
-        // Add more rows as needed
+        // Certificate Courses
         [
-          { text: "2", rowspan: 3 },
+          { text: "1", rowspan: 9 },
           {
-            text: "Information & Communication Technology",
+            text: "CERTIFICATE",
             clickable: true,
             style: {
               "font-weight": "bold",
               cursor: "pointer",
               transition: "color 0.3s ease-in-out",
             },
-            rowspan: 3,
+            rowspan: 9,
           },
           {
-            text: "Certificate",
-
-            rowspan: 3,
+            text: "Fashion and Design",
           },
           {
-            text: "Module I- KCSE D plain",
+            text: "KCSE C- and Above",
           },
           {
-            text: "3 Terms and Attachment",
+            text: "9 Months ",
           },
           {
-            text: "20,000",
+            text: "15,500",
           },
           {
             text: "Jan May September",
-
-            rowspan: 2,
           },
           {
-            text: "KNEC",
-
-            rowspan: 2,
+            text: "NITA",
+          },
+        ],
+        [
+          {
+            text: "Plumbing",
+          },
+          {
+            text: "Atleast D-",
+          },
+          {
+            text: "2 Terms ",
+          },
+          {
+            text: "18,000",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "Institution",
           },
         ],
       ],

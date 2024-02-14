@@ -1,25 +1,233 @@
 <template>
   <div class="w-full z-50" :class="{ 'fixed top-0': isFixed }">
-    <!-- <ContactNav /> -->
-    <header
-      class="text-gray-700 border-b border-gray-200 bg-white shadow-sm body-font"
-    >
-      <div class="flex flex-row items-center justify-between mx-auto max-w-7xl">
-        <router-link :to="{ name: 'home' }"> <NavbarIcon /></router-link>
-        <NavbarItems />
+    <header class="h-20 flex px-2 justify-between lg:justify-center bg-white">
+      <a class="flex pl-4 items-center font-medium text-gray-900 max-w-7xl">
+        <img src="../assets/icon.png" alt="icon" class="h-20 md:h-20 p-1" />
+        <h1 class="flex flex-col text-2xl text-yellow-700">
+          MIDIFF INSTITUTE <br /><span class="text-sm"
+            >OF PROFFESIONAL STUDIES</span
+          >
+        </h1>
+      </a>
+      <nav
+        :class="{ hidden: close, 'sm:flex': open }"
+        id="nav-content"
+        class="container max-lg:h-screen max-lg:w-4/5 max-w-4xl right-0 max-lg:top-20 z-50 absolute lg:relative flex max-lg:flex-col lg:flex lg:justify-center border-t max-lg:shadow-2xl border-gray-300 bg-white"
+      >
+        <!-- home button -->
+        <router-link
+          :to="{ name: 'home' }"
+          active-class="active-link"
+          class="text-lg text-gray-700 font-medium hover:text-cyan-600"
+          @click="toggleMenu"
+          ><div
+            class="inline-flex items-center justify-between max-lg:w-full p-5 rounded-md"
+          >
+            <span class="text-lg font-medium text-gray-700">Home</span>
+          </div>
+        </router-link>
+
+        <!-- about us button -->
+        <router-link
+          :to="{ name: 'about' }"
+          active-class="active-link"
+          class="text-lg text-gray-700 font-medium hover:text-cyan-600"
+          @click="toggleMenu"
+          ><div
+            class="inline-flex items-center justify-between max-lg:w-full p-5 rounded-md"
+          >
+            <span class="text-lg font-medium text-gray-700">About Us</span>
+          </div>
+        </router-link>
+
+        <!-- courses Button -->
+        <a class="relative inline-block" id="drop">
+          <button
+            class="inline-flex items-center justify-between max-lg:w-full p-5 rounded-md"
+            @click="toggleDropdown('about')"
+          >
+            <span class="text-lg font-medium text-gray-700">Admission</span>
+            <svg
+              class="w-4 h-4 ml-2 -mr-1 text-gray-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="4"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <!-- DROPDOWN MENU -->
+          <div
+            :class="{ hidden: !dropdowns.about.visible }"
+            class="relative md:absolute z-10 w-64 md:max-w-screen-md bg-white md:shadow-lg"
+            @click.stop="hideDropdown('about')"
+          >
+            <ul class="lg:divide-y lg:divide-yellow-700 lg:py-5">
+              <li v-for="item in dropdowns.about.items" :key="item.id">
+                <router-link
+                  :to="{ name: 'home' }"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:text-cyan-600"
+                >
+                  {{ item.label }}
+                </router-link>
+              </li>
+            </ul>
+          </div>
+        </a>
+
+        <a class="relative inline-block" id="drop2">
+          <button
+            class="inline-flex items-center justify-between max-lg:w-full p-5 rounded-md"
+            @click="toggleDropdown('event')"
+          >
+            <span class="text-lg font-medium text-gray-700">Info</span>
+            <svg
+              class="w-4 h-4 ml-2 -mr-1 text-gray-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="4"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <!-- DROPDOWN MENU -->
+          <div
+            :class="{ hidden: !dropdowns.event.visible }"
+            class="relative md:absolute z-10 w-64 md:max-w-screen-md bg-white md:shadow-lg"
+            @click.stop="hideDropdown('event')"
+          >
+            <ul class="lg:divide-y lg:divide-yellow-700 lg:py-5">
+              <li v-for="item in dropdowns.event.items" :key="item.id">
+                <router-link
+                  :to="{ name: 'home' }"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:text-cyan-600"
+                >
+                  {{ item.label }}
+                </router-link>
+              </li>
+            </ul>
+          </div>
+        </a>
+
+        <router-link
+          :to="{ name: 'news' }"
+          active-class="active-link"
+          class="text-lg text-gray-700 font-medium hover:text-cyan-600"
+          @click="toggleMenu"
+          ><div
+            class="inline-flex items-center justify-between max-lg:w-full p-5 rounded-md"
+          >
+            <span class="text-lg font-medium text-gray-700"
+              >News & Updates</span
+            >
+          </div>
+        </router-link>
+
+        <router-link
+          :to="{ name: 'home' }"
+          active-class="active-link"
+          class="text-lg text-gray-700 font-medium hover:text-cyan-600"
+          @click="toggleMenu"
+          ><div
+            class="inline-flex items-center justify-between max-lg:w-full p-5 rounded-md"
+          >
+            <span class="text-lg font-medium text-gray-700">Get in Touch</span>
+          </div>
+        </router-link>
+      </nav>
+
+      <!-- used for the opening and closing of the navbar in small devices  -->
+      <div class="flex items-center right-0 h-full pl-4 ml-6">
+        <button
+          data-collapse-toggle="navbar-sticky"
+          type="button"
+          class="text-sm pl-2 text-white rounded-lg lg:hidden focus:outline-none"
+          aria-controls="navbar-sticky"
+          aria-expanded="false"
+          @click="toggleMenu"
+        >
+          <span class="sr-only">Open main menu</span>
+          <h1
+            class="text-4xl font-bold mr-4 text-gray-900 hover:text-indigo-700"
+          >
+            <!-- Display hamburger icon when menu is closed, and 'x' when menu is open -->
+            {{ close ? "&#9776;" : "&cross;" }}
+          </h1>
+        </button>
       </div>
     </header>
   </div>
 </template>
 
 <script setup>
-import ContactNav from "../components/navbar/navcontact.vue";
-import NavbarIcon from "../components/navbar/navbarIcon.vue";
-import NavbarItems from "../components/navbar/navbarItem.vue";
+import { ref, onMounted } from "vue";
 
-import { ref } from "vue";
+const close = ref(true);
+const open = ref(false);
 
 const { isFixed } = defineProps(["isFixed"]);
-</script>
 
-<style lang="scss" scoped></style>
+const toggleMenu = () => {
+  close.value = !close.value;
+  open.value = !open.value;
+};
+
+const toggleDropdown = (dropdown) => {
+  dropdowns.value[dropdown].visible = !dropdowns.value[dropdown].visible;
+};
+
+const hideDropdown = (dropdown) => {
+  dropdowns.value[dropdown].visible = false;
+};
+
+const dropdowns = ref({
+  about: {
+    visible: false,
+    items: [
+      { id: 1, label: "Entry Requirements" },
+      { id: 2, label: "Culinary School" },
+      { id: 3, label: "Engineering School" },
+      { id: 4, label: "Design School" },
+      { id: 5, label: "ICT School" },
+    ],
+  },
+  event: {
+    visible: false,
+    items: [
+      { id: 1, label: "News and Updates" },
+      { id: 2, label: "Photo Gallery" },
+      { id: 3, label: "Student Life" },
+    ],
+  },
+});
+
+onMounted(() => {
+  // Add a global click event listener to close dropdowns on outside click
+  document.addEventListener("click", handleOutsideClick);
+});
+
+const handleOutsideClick = (event) => {
+  const drop = document.getElementById("drop");
+  const drop2 = document.getElementById("drop2");
+
+  if (!drop.contains(event.target)) {
+    dropdowns.value["about"].visible = false;
+  }
+
+  if (!drop2.contains(event.target)) {
+    dropdowns.value["event"].visible = false;
+  }
+};
+</script>
