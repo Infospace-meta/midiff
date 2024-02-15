@@ -27,18 +27,15 @@ const details = ref([
     content: [
       {
         type: "heading",
-        text: "ACCESS BANK  PLC  (Formerly Transnational Bank)",
+        text: "I&M BANK",
         style: { color: "black" },
       },
       {
         type: "list",
         items: [
           "BRANCH: NAKURU",
-          "ACCOUNT NAME: KABARAK UNIVERSITY",
-          "ACCOUNT NO.: 0040100000483",
-          "SWIFT CODE: ABNGKENA",
-          "BANK CODE: 26004",
-          "BRANCH CODE: 004",
+          "ACCOUNT NAME: MIDIFF INSTITUTE OF PROFESSIONAL STUDIES",
+          "ACCOUNT NO.: 01803148391852",
         ],
       },
     ],
@@ -48,18 +45,15 @@ const details = ref([
     content: [
       {
         type: "heading",
-        text: "BACKGROUND",
+        text: "KCB BANK",
         style: { color: "black" },
       },
       {
         type: "list",
         items: [
-          "BRANCH: NAKURU",
-          "ACCOUNT NAME: KABARAK UNIVERSITY",
-          "ACCOUNT NO.: 0040100000483",
-          "SWIFT CODE: ABNGKENA",
-          "BANK CODE: 26004",
-          "BRANCH CODE: 004",
+          "BRANCH: FLAMINGO",
+          "ACCOUNT NAME: MIDIFF INSTITUTE OF PROFESSIONAL",
+          "ACCOUNT NO.: 1295060760",
         ],
       },
     ],
