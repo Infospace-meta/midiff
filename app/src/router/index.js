@@ -7,6 +7,7 @@ import CoursesView from "../views/CoursesView.vue";
 import CoursesPageView from "../views/CoursesPageView.vue";
 import DeptView from "../views/DeptView.vue";
 import NewsView from "../views/NewsView.vue";
+import ApplicationView from "../views/Application/Application.vue"
 
 /**Define routes here */
 const routes = [
@@ -16,6 +17,7 @@ const routes = [
   { path: "/courses", name: "courses", component: CoursesView },
   { path: "/courses_page", name: "courses_page", component: CoursesPageView },
   { path: "/departments", name: "departments", component: DeptView },
+  { path: "/application", name: "application", component: ApplicationView },
   { path: "/news", name: "news", component: NewsView },
 ];
 

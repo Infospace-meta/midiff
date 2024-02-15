@@ -64,48 +64,6 @@ const details = ref([
       },
     ],
   },
-  {
-    name: "Overview",
-    content: [
-      {
-        type: "heading",
-        text: "BACKGROUND",
-        style: { color: "black" },
-      },
-      {
-        type: "list",
-        items: [
-          "BRANCH: NAKURU",
-          "ACCOUNT NAME: KABARAK UNIVERSITY",
-          "ACCOUNT NO.: 0040100000483",
-          "SWIFT CODE: ABNGKENA",
-          "BANK CODE: 26004",
-          "BRANCH CODE: 004",
-        ],
-      },
-    ],
-  },
-  {
-    name: "Overview",
-    content: [
-      {
-        type: "heading",
-        text: "BACKGROUND",
-        style: { color: "black" },
-      },
-      {
-        type: "list",
-        items: [
-          "BRANCH: NAKURU",
-          "ACCOUNT NAME: KABARAK UNIVERSITY",
-          "ACCOUNT NO.: 0040100000483",
-          "SWIFT CODE: ABNGKENA",
-          "BANK CODE: 26004",
-          "BRANCH CODE: 004",
-        ],
-      },
-    ],
-  },
 ]);
 
 // Computed property to check if the detail is a heading
