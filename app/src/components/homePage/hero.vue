@@ -66,7 +66,7 @@
           </router-link>
         </div>
         <div>
-          <img class="h-full w-auto" src="../../assets/ladies.JPG" alt="" />
+          <img class="h-full w-auto" src="@/assets/ladies.JPG" alt="" />
         </div>
       </div>
     </div>
