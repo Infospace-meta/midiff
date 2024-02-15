@@ -14,7 +14,7 @@ const routes = [
   { path: "/home", name: "home", component: HomeView },
   { path: "/about", name: "about", component: AboutView },
   { path: "/courses", name: "courses", component: CoursesView },
-  { path: "/coursesPage", name: "coursesPage", component: CoursesPageView },
+  { path: "/courses_page", name: "courses_page", component: CoursesPageView },
   { path: "/departments", name: "departments", component: DeptView },
   { path: "/news", name: "news", component: NewsView },
 ];
