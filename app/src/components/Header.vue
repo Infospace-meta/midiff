@@ -1,11 +1,9 @@
 <template>
   <div class="w-full z-50" :class="{ 'fixed top-0': isFixed }">
     <header class="h-20 flex px-2 justify-between lg:justify-center bg-white">
-      <a class="flex pl-4 items-center font-medium text-gray-900 ">
+      <a class="flex pl-4 items-center font-medium text-gray-900">
         <img src="@/assets/icon.png" alt="icon" class="h-14 md:h-20 p-1" />
-        <div
-          class="flex flex-col lg:text-2xl text-yellow-700 uppercase"
-        >
+        <div class="flex flex-col lg:text-2xl text-yellow-700 uppercase">
           midiff institute <br /><span class="max-md:hidden lg:text-sm"
             >of proffesional studies</span
           >
@@ -79,7 +77,7 @@
             <ul class="lg:divide-y lg:divide-yellow-700 lg:py-5">
               <li v-for="item in dropdowns.about.items" :key="item.id">
                 <router-link
-                  :to="{ name: 'home' }"
+                  :to=item.router
                   class="block px-4 py-2 text-sm text-gray-700 hover:text-cyan-600"
                 >
                   {{ item.label }}
@@ -204,11 +202,8 @@ const dropdowns = ref({
   about: {
     visible: false,
     items: [
-      { id: 1, label: "Entry Requirements" },
-      { id: 2, label: "Culinary School" },
-      { id: 3, label: "Engineering School" },
-      { id: 4, label: "Design School" },
-      { id: 5, label: "ICT School" },
+      { id: 1, label: "Application Process", router: { name: "application" } },
+      { id: 2, label: "Entry Requirements", router: { name: "entry_requirements" }},
     ],
   },
   event: {

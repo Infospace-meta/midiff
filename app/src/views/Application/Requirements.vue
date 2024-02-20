@@ -1,7 +1,9 @@
 <template>
-  <div>Dept View</div>
+  <EntryRequirements />
 </template>
 
-<script setup></script>
+<script setup>
+import EntryRequirements from "../../components/application/entryRequirements.vue";
+</script>
 
 <style lang="scss" scoped></style>

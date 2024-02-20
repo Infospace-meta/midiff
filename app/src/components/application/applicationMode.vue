@@ -1,5 +1,3 @@
-
-import BankDetails from '../fees/bankDetails.vue';
 <template>
   <div class="mx-auto max-w-7xl py-10 px-5">
     <div class="flex flex-col-reverse md:grid grid-cols-9 gap-5">
@@ -35,9 +33,9 @@ import BankDetails from '../fees/bankDetails.vue';
           <p class="text-lg">
             For Enquiries, please contact our admissions team;
           </p>
-          <ul class="p-2 text-lg">
-            <li>midiffinstitut@gmail.com</li>
-            <li>0100 471070</li>
+          <ul class="p-2 text-lg font-semibold">
+            <li>&#9679; midiffinstitut@gmail.com</li>
+            <li>&#9679; 0100 471070</li>
           </ul>
           <button class="text-white uppercase bg-yellow-700 text-center p-2">
             give us a call
@@ -49,5 +47,5 @@ import BankDetails from '../fees/bankDetails.vue';
 </template>
 
 <script setup>
-import BankDetails from '../fees/bankDetails.vue';
+import BankDetails from "../fees/bankDetails.vue";
 </script>
