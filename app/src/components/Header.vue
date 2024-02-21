@@ -77,7 +77,7 @@
             <ul class="lg:divide-y lg:divide-yellow-700 lg:py-5">
               <li v-for="item in dropdowns.about.items" :key="item.id">
                 <router-link
-                  :to=item.router
+                  :to="item.router"
                   class="block px-4 py-2 text-sm text-gray-700 hover:text-cyan-600"
                 >
                   {{ item.label }}
@@ -117,7 +117,7 @@
             <ul class="lg:divide-y lg:divide-yellow-700 lg:py-5">
               <li v-for="item in dropdowns.event.items" :key="item.id">
                 <router-link
-                  :to="{ name: 'home' }"
+                  :to="item.router"
                   class="block px-4 py-2 text-sm text-gray-700 hover:text-cyan-600"
                 >
                   {{ item.label }}
@@ -203,15 +203,19 @@ const dropdowns = ref({
     visible: false,
     items: [
       { id: 1, label: "Application Process", router: { name: "application" } },
-      { id: 2, label: "Entry Requirements", router: { name: "entry_requirements" }},
+      {
+        id: 2,
+        label: "Entry Requirements",
+        router: { name: "entry_requirements" },
+      },
     ],
   },
   event: {
     visible: false,
     items: [
-      { id: 1, label: "News and Updates" },
-      { id: 2, label: "Photo Gallery" },
-      { id: 3, label: "Student Life" },
+      { id: 1, label: "News and Updates", router: { name: "student_life" } },
+      { id: 2, label: "Photo Gallery", router: { name: "student_life" } },
+      { id: 3, label: "Student Life", router: { name: "student_life" } },
     ],
   },
 });
