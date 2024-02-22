@@ -14,21 +14,6 @@
         id="nav-content"
         class="container max-lg:h-screen max-lg:w-4/5 max-w-4xl right-0 max-lg:top-20 z-50 absolute lg:relative flex max-lg:flex-col lg:flex lg:justify-center border-t max-lg:shadow-2xl border-gray-300 bg-white"
       >
-        <!-- home button -->
-        <!-- <router-link
-          :to="{ name: 'home' }"
-          active-class="active-link"
-          class="text-lg text-gray-700 font-medium"
-          @click="toggleMenu"
-          ><div
-            class="inline-flex items-center justify-between max-lg:w-full p-5 rounded-md"
-          >
-            <span
-              class="text-lg font-medium text-gray-700 hover:text-cyan-600"
-              >Home</span
-            >
-          </div>
-        </router-link> -->
         <router-link
           :to="{ name: 'home' }"
           active-class="active-link"
@@ -129,11 +114,11 @@
 
         <!-- info button -->
         <router-link
-          :to="{ name: 'news' }"
+          :to="{ name: 'courses' }"
           active-class="active-link"
           class="p-5 font-medium hover:text-cyan-600 lg:mr-5"
           @click="toggleMenu"
-          >News & Updates
+          >Courses
         </router-link>
 
         <!-- get in touch button -->
@@ -213,7 +198,7 @@ const dropdowns = ref({
   event: {
     visible: false,
     items: [
-      { id: 1, label: "News and Updates", router: { name: "student_life" } },
+      { id: 1, label: "News and Updates", router: { name: "news" } },
       { id: 2, label: "Photo Gallery", router: { name: "gallery" } },
       { id: 3, label: "Student Life", router: { name: "student_life" } },
     ],
