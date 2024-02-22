@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-7xl">
+  <div class="mx-auto max-w-7xl bg-gray-50">
     <ul class="gallery flex flex-wrap justify-center items-center gap-5">
       <li v-for="(photo, index) in photos" :key="photo.id">
         <img
@@ -10,32 +10,45 @@
         />
       </li>
     </ul>
-    <Modal
-      :showModal="showModal"
-      :photos="photos"
-      :selectedIndex="selectedIndex"
-      @closeModal="closeModal"
-    />
+    <div
+      v-if="showModal"
+      class="max-lg:hidden fixed inset-0 mt-28 flex justify-center items-center bg-black bg-opacity-50"
+    >
+      <div class="max-w-screen-lg bg-white p-4 rounded-lg shadow-lg">
+        <div class="flex justify-end">
+          <button @click="closeModal" class="m-2 text-black text-5xl">
+            &times;
+          </button>
+        </div>
+        <img
+          :src="currentPhoto.image"
+          :alt="currentPhoto.title"
+          class="object-contain lg:h-[700px]"
+        />
+        <div class="flex justify-between mt-4">
+          <button
+            @click="prevPhoto"
+            class="bg-yellow-700 p-2 rounded-xl text-white"
+          >
+            &lt; Prev
+          </button>
+          <button
+            @click="nextPhoto"
+            class="bg-indigo-900 p-2 rounded-xl text-white"
+          >
+            Next &gt;
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
-import Modal from "./photoModal.vue"; // Adjust the path accordingly
-import { ref } from "vue";
+import { ref, computed } from "vue";
 
 const showModal = ref(false);
 const selectedIndex = ref(null);
-
-const openModal = (index) => {
-  selectedIndex.value = index;
-  showModal.value = true;
-};
-
-const closeModal = () => {
-  selectedIndex.value = null;
-  showModal.value = false;
-};
-
 const photos = ref([
   {
     id: 1,
@@ -323,4 +336,35 @@ const photos = ref([
     image: "src/assets/graduation23/57.jpg",
   },
 ]);
+
+const currentPhotoIndex = computed(() => {
+  return selectedIndex.value !== null ? selectedIndex.value : 0;
+});
+
+const currentPhoto = computed(() => {
+  return photos.value[currentPhotoIndex.value];
+});
+
+const openModal = (index) => {
+  selectedIndex.value = index;
+  showModal.value = true;
+};
+
+const closeModal = () => {
+  selectedIndex.value = null;
+  showModal.value = false;
+};
+
+const prevPhoto = () => {
+  selectedIndex.value =
+    (selectedIndex.value - 1 + photos.value.length) % photos.value.length;
+};
+
+const nextPhoto = () => {
+  selectedIndex.value = (selectedIndex.value + 1) % photos.value.length;
+};
 </script>
+
+<style>
+/* Add your custom styles here */
+</style>

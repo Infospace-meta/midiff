@@ -10,6 +10,7 @@ import NewsView from "../views/NewsView.vue";
 import ApplicationView from "../views/Application/Application.vue"
 import EntryRequirementsView from "../views/Application/Requirements.vue";
 import StudentView from "../views/Info/StudentView.vue";
+import GalleryView from "../views/Info/Gallery.vue";
 
 /**Define routes here */
 const routes = [
@@ -23,6 +24,7 @@ const routes = [
   { path: "/entry_requirements", name: "entry_requirements", component: EntryRequirementsView },
   { path: "/news", name: "news", component: NewsView },
   { path: "/student_life", name: "student_life", component: StudentView },
+  { path: "/gallery", name: "gallery", component: GalleryView },
 ];
 
 /**Initialize here */
