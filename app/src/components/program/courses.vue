@@ -80,7 +80,6 @@ const contents = ref([
       headers: [
         { text: "Level", rowspan: 2, colspan: 2 },
         { text: "Course", rowspan: 2 },
-        { text: "Minimum Requirements", rowspan: 2 },
         { text: "Duration", rowspan: 2 },
         { text: "Tution Fee (Per Semester)", rowspan: 2 },
         { text: "Intake", rowspan: 2 },
@@ -103,9 +102,6 @@ const contents = ref([
             text: "Electrical and Electronic Engineering (Power Option) ",
           },
           {
-            text: "KCSE C- and Above",
-          },
-          {
             text: "7 Terms ",
           },
           {
@@ -123,9 +119,6 @@ const contents = ref([
             text: "Automative Engineering ",
           },
           {
-            text: "KCSE C- and Above",
-          },
-          {
             text: "7 Terms ",
           },
           {
@@ -141,9 +134,6 @@ const contents = ref([
         [
           {
             text: "Plumbing",
-          },
-          {
-            text: "KCSE C- and Above",
           },
           {
             text: "7 Terms ",
@@ -163,9 +153,6 @@ const contents = ref([
             text: "Fashion and Design",
           },
           {
-            text: "KCSE C- and Above",
-          },
-          {
             text: "6 Terms ",
           },
           {
@@ -181,9 +168,6 @@ const contents = ref([
         [
           {
             text: "Hairdressing and Beauty Therapy",
-          },
-          {
-            text: "KCSE C- and Above",
           },
           {
             text: "6 Terms ",
@@ -203,9 +187,6 @@ const contents = ref([
             text: "Food and Beverage",
           },
           {
-            text: "KCSE C- and Above",
-          },
-          {
             text: "3 Terms ",
           },
           {
@@ -223,9 +204,6 @@ const contents = ref([
             text: "Catering",
           },
           {
-            text: "KCSE C- and Above",
-          },
-          {
             text: "2 Terms ",
           },
           {
@@ -241,7 +219,7 @@ const contents = ref([
 
         // Certificate Courses
         [
-          { text: "1", rowspan: 9 },
+          { text: "2", rowspan: 9 },
           {
             text: "CERTIFICATE",
             clickable: true,
@@ -254,9 +232,6 @@ const contents = ref([
           },
           {
             text: "Fashion and Design",
-          },
-          {
-            text: "KCSE C- and Above",
           },
           {
             text: "9 Months ",
@@ -274,9 +249,6 @@ const contents = ref([
         [
           {
             text: "Plumbing",
-          },
-          {
-            text: "Atleast D-",
           },
           {
             text: "2 Terms ",
