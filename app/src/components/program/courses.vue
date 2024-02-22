@@ -382,6 +382,104 @@ const contents = ref([
             text: "NITA",
           },
         ],
+
+        // Short Courses
+        [
+          { text: "2", rowspan: 9 },
+          {
+            text: "SHORT COURSES",
+            clickable: true,
+            style: {
+              "font-weight": "bold",
+              cursor: "pointer",
+              transition: "color 0.3s ease-in-out",
+            },
+            rowspan: 9,
+          },
+          {
+            text: "Driving School",
+          },
+          {
+            text: "1 Month ",
+          },
+          {
+            text: "12,000",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "NTSA",
+          },
+        ],
+        [
+          {
+            text: "Computer Packages",
+          },
+          {
+            text: "1 Month ",
+          },
+          {
+            text: "6,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "Institution",
+          },
+        ],
+        [
+          {
+            text: "Artificial Intelligence (AI)",
+          },
+          {
+            text: "1 Month ",
+          },
+          {
+            text: "15,000",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "Institution",
+          },
+        ],
+        [
+          {
+            text: "Forex Trading & Securities",
+          },
+          {
+            text: "1 Month ",
+          },
+          {
+            text: "10,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "Institution",
+          },
+        ],
+        [
+          {
+            text: "Artisan Courses",
+          },
+          {
+            text: "3 Months ",
+          },
+          {
+            text: "12,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "Institution",
+          },
+        ],
       ],
     },
   },
