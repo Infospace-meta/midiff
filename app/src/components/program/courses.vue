@@ -231,7 +231,92 @@ const contents = ref([
             rowspan: 9,
           },
           {
-            text: "Fashion and Design",
+            text: "Hairdressing",
+          },
+          {
+            text: "6 Months ",
+          },
+          {
+            text: "10,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "NITA",
+          },
+        ],
+        [
+          {
+            text: "Beauty Therapy",
+          },
+          {
+            text: "6 Months ",
+          },
+          {
+            text: "10,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "NITA",
+          },
+        ],
+        [
+          {
+            text: "Baking Technology",
+          },
+          {
+            text: "3 Months ",
+          },
+          {
+            text: "12,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "Institution",
+          },
+        ],
+        [
+          {
+            text: "Pastry making",
+          },
+          {
+            text: "3 Months ",
+          },
+          {
+            text: "12,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "Institution",
+          },
+        ],
+        [
+          {
+            text: "Food Technology",
+          },
+          {
+            text: "6 Months ",
+          },
+          {
+            text: "12,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "Institution",
+          },
+        ],
+        [
+          {
+            text: "Fashion & Design",
           },
           {
             text: "9 Months ",
@@ -243,7 +328,7 @@ const contents = ref([
             text: "Jan May September",
           },
           {
-            text: "NITA",
+            text: "Institution",
           },
         ],
         [
@@ -251,7 +336,7 @@ const contents = ref([
             text: "Plumbing",
           },
           {
-            text: "2 Terms ",
+            text: "6 Months ",
           },
           {
             text: "18,000",
@@ -260,7 +345,41 @@ const contents = ref([
             text: "Jan May September",
           },
           {
-            text: "Institution",
+            text: "NITA",
+          },
+        ],
+        [
+          {
+            text: "Electrical Installation",
+          },
+          {
+            text: "6 Months ",
+          },
+          {
+            text: "10,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "NITA",
+          },
+        ],
+        [
+          {
+            text: "Motor Vehicle Mechanic",
+          },
+          {
+            text: "6 Months ",
+          },
+          {
+            text: "10,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "NITA",
           },
         ],
       ],

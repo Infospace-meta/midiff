@@ -9,7 +9,7 @@
           <hr class="w-full border-r-2 border-indigo-700" />
         </div>
         <P
-          >To gain admission to the Kabarak University TVET Institute, you must
+          >To gain admission at Midiff Institute, you must
           satisfy any of the following minimum requirements:</P
         >
         <ul class="p-2 text-lg font-semibold">
