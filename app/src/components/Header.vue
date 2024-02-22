@@ -214,7 +214,7 @@ const dropdowns = ref({
     visible: false,
     items: [
       { id: 1, label: "News and Updates", router: { name: "student_life" } },
-      { id: 2, label: "Photo Gallery", router: { name: "student_life" } },
+      { id: 2, label: "Photo Gallery", router: { name: "gallery" } },
       { id: 3, label: "Student Life", router: { name: "student_life" } },
     ],
   },

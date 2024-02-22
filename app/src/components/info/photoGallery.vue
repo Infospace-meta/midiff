@@ -1,36 +1,17 @@
 <template>
   <div>
     <ul class="gallery">
-      <li v-for="n in 5" :key="n">
+      <li v-for="n in 57" :key="n">
         <img
           @click="highlight"
-          :src="require('@/assets/photos/beijing/' + n + '.jpeg')"
+          :src="require('../../assets/graduation23/' + n + '.jpg')"
         />
       </li>
     </ul>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'PhotoGallery'
-},
-methods: {
-  highlight() {
-    event.target.id = "theater";
-    let eventIterator = event.target.parentNode;
-    while (eventIterator.previousElementSibling != null) {
-      eventIterator.previousElementSibling.getElementsByTagName('img')[0].id = "";
-      eventIterator = eventIterator.previousElementSibling;
-    }
-    eventIterator = event.target.parentNode;
-    while (eventIterator.nextElementSibling != null) {
-      eventIterator.nextElementSibling.getElementsByTagName('img')[0].id = "";
-      eventIterator = eventIterator.nextElementSibling;
-    }
-  }
-}
-</script>
+<script></script>
 
 <style scoped>
 ul {
