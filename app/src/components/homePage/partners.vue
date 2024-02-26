@@ -27,9 +27,21 @@ import { Splide, SplideSlide } from "@splidejs/vue-splide";
 //import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 
 const slides = ref([
-  { id: 1, image: "../src/assets/icon.png" },
-  { id: 2, image: "../src/assets/icon.png" },
-  { id: 3, image: "../src/assets/icon.png" },
+  {
+    id: 1,
+    image:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990027/Midiff/icon_w6wt3f.png",
+  },
+  {
+    id: 2,
+    image:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990027/Midiff/icon_w6wt3f.png",
+  },
+  {
+    id: 3,
+    image:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990027/Midiff/icon_w6wt3f.png",
+  },
   // Add more slides as needed
 ]);
 

@@ -28,7 +28,7 @@
           :style="{ backgroundImage: `url('${program.image}')` }"
         ></div>
         <!-- <img :src="program.image" alt="Slide Image" class="h-40" /> -->
-        <div class="text-xl p-4 ">{{ program.name }}</div>
+        <div class="text-xl p-4">{{ program.name }}</div>
       </div>
     </div>
   </div>
@@ -38,24 +38,66 @@
 import { ref } from "vue";
 
 const programs = ref([
-  { id: 1, image: "src/assets/electrical.jpg", name: "Electrical Installation" },
-  { id: 2, image: "src/assets/hairdressing.jpg", name: "Hairdressing" },
-  { id: 3, image: "src/assets/beauty.jpg", name: "Beauty Therapy" },
-  { id: 4, image: "src/assets/baking.jpg", name: "Baking Technology" },
-  { id: 5, image: "src/assets/fashion.jpg", name: "Fashion and Design" },
+  {
+    id: 1,
+    image:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990037/Midiff/electrical_zupwow.jpg",
+    name: "Electrical Installation",
+  },
+  {
+    id: 2,
+    image:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990026/Midiff/hairdressing_yvettx.jpg",
+    name: "Hairdressing",
+  },
+  {
+    id: 3,
+    image:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990034/Midiff/beauty_gyzwa3.jpg",
+    name: "Beauty Therapy",
+  },
+  {
+    id: 4,
+    image:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990043/Midiff/baking_etmoww.jpg",
+    name: "Baking Technology",
+  },
+  {
+    id: 5,
+    image:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990039/Midiff/fashion_h60jl9.jpg",
+    name: "Fashion and Design",
+  },
   {
     id: 6,
-    image: "src/assets/forexTrading.jpg",
+    image:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990040/Midiff/forexTrading_bfz69n.jpg",
     name: "Forex trading and security",
   },
   {
     id: 7,
-    image: "src/assets/drivingschool.jpg",
+    image:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990037/Midiff/drivingSchool_cofzfa.jpg",
     name: "Driving and Computer Packages",
   },
-  { id: 8, image: "src/assets/mechanical.jpg", name: "Motor Vehicle Mechanic" },
-  { id: 9, image: "src/assets/cooking.jpg", name: "Food Technology" },
-  { id: 10, image: "src/assets/plumbing.jpg", name: "Plumbing" },
+  {
+    id: 8,
+    image:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990028/Midiff/mechanical_yzvdif.jpg",
+    name: "Motor Vehicle Mechanic",
+  },
+  {
+    id: 9,
+    image:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990045/Midiff/cooking_ymfma7.jpg",
+    name: "Food Technology",
+  },
+  {
+    id: 10,
+    image:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990030/Midiff/plumbing_idvw1j.jpg",
+    name: "Plumbing",
+  },
   // Add more slides as needed
 ]);
 </script>
