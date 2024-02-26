@@ -31,7 +31,7 @@
           </div>
         </div>
       </div>
-      <div class="col-span-2 p-14">
+      <div class="col-span-2 p-4">
         <div class="bg-purple-200 p-10 flex flex-col gap-5">
           <h1 class="text-lg uppercase font-semibold text-purple-900">
             Get in touch
@@ -52,12 +52,36 @@
         </div>
       </div>
     </div>
+    <div class="lg:grid grid-cols-6 bg-gray-200">
+      <div class="col-span-4">
+        <EmailForm />
+      </div>
+      <div class="col-span-2">
+        <div class="py-10 max-md:hidden">
+          <iframe
+            src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fmidiffinstitute&width=600&colorscheme=light&show_faces=true&border_color&stream=true&header=true&height=435"
+            scrolling="yes"
+            style="
+              border: 1px;
+              overflow: auto;
+              width: 500px;
+              height: 430px;
+              background: white;
+              float: right;
+            "
+            allowtransparency="true"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
 import SocialMedia from "./socialMedia.vue";
+import EmailForm from "./emailForm.vue";
 
 const contents = ref([
   {
@@ -86,17 +110,22 @@ const cards = ref([
   },
   {
     name: "instagram",
+    imageURL: "src/assets/twitter.png",
+    linkURL: "",
+  },
+  {
+    name: "instagram",
+    imageURL: "src/assets/facebook.png",
+    linkURL: "",
+  },
+  {
+    name: "instagram",
+    imageURL: "src/assets/whatsapp.gif",
+    linkURL: "",
+  },
+  {
+    name: "instagram",
     imageURL: "src/assets/instagram.png",
-    linkURL: "",
-  },
-  {
-    name: "instagram",
-    imageURL: "src/assets/facebook.gif",
-    linkURL: "",
-  },
-  {
-    name: "instagram",
-    imageURL: "src/assets/tik-tok.gif",
     linkURL: "",
   },
 ]);
