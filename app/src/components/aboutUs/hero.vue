@@ -31,20 +31,12 @@ import { LOOP } from "@splidejs/splide";
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
 
 const slides = ref([
-  // {
-  //   id: 1,
-  //   image: "../src/assets/boys.jpg",
-  //   title: "ABOUT US",
-  //   description: "Description 1",
-  // },
   {
     id: 2,
     image: "../src/assets/group.jpg",
     title: "ABOUT US",
     description: "Description 2",
   },
-
-  // Add more slides as needed
 ]);
 
 const splideOptions = {
@@ -54,6 +46,7 @@ const splideOptions = {
   type: "loop",
   drag: "free",
   focus: "center",
+  arrows: false,
   perPage: 1,
   autoScroll: {
     speed: 1,

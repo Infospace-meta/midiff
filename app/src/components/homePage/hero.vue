@@ -5,7 +5,7 @@
         <SplideSlide class="relative" v-for="slide in slides" :key="slide.id">
           <div
             :style="{ backgroundImage: `url('${slide.image}')` }"
-            class="w-screen h-96 lg:h-[700px] bg-cover bg-center bg-black relative"
+            class="w-screen h-64 lg:h-[700px] bg-cover bg-center bg-black relative"
           >
             <!-- Darkened background -->
             <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -15,13 +15,13 @@
               class="absolute inset-0 flex items-center justify-center text-white p-4"
             >
               <div>
-                <h1 class="text-4xl lg:text-6xl font-bold mb-4">
+                <h1 class="text-4xl lg:text-6xl font-bold lg:mb-4">
                   {{ slide.title }}
                 </h1>
-                <div class="py-20">
-                  <router-link :to="{ name: 'home' }"
+                <div class="lg:py-20 py-5">
+                  <router-link :to="slide.router"
                     ><button
-                      class="py-2 px-4 text-2xl bg-indigo-700 rounded-lg text-white"
+                      class="lg:py-2 py-1 px-4 lg:text-2xl bg-indigo-700 rounded-lg text-white"
                     >
                       {{ slide.button }}
                     </button></router-link
@@ -40,9 +40,9 @@
         </SplideSlide>
       </Splide>
     </div>
-    <div class="max-w-7xl mx-auto py-10">
-      <div class="flex flex-col-reverse md:grid grid-cols-2">
-        <div class="flex flex-col gap-8 bg-violet-900 p-8 text-white text-lg">
+    <div class="max-w-7xl mx-auto lg:py-10">
+      <div class="flex flex-col lg:grid grid-cols-2">
+        <div class="flex flex-col gap-2 lg:gap-8 bg-violet-900 p-8 text-white lg:text-lg">
           <h1 class="font-semibold">
             Welcome to Midiff institute of Proffessional Studies
           </h1>
@@ -65,7 +65,7 @@
             </h1>
           </router-link>
         </div>
-        <div>
+        <div class="max-lg:hidden">
           <img class="h-full w-auto" src="@/assets/ladies.JPG" alt="" />
         </div>
       </div>
@@ -81,24 +81,27 @@ import { Splide, SplideSlide } from "@splidejs/vue-splide";
 const slides = ref([
   {
     id: 1,
-    image: "../src/assets/ladies.jpg",
+    image: "src/assets/ladies.jpg",
     title: "January 2024 Intake in Progress",
     description: "Description 1",
     button: "Enroll",
+    router: { name: "application" },
   },
   {
     id: 2,
-    image: "../src/assets/graduates.JPG",
+    image: "src/assets/graduates.JPG",
     title: "class of 2023 graduation",
     description: "Description 2",
     button: "View",
+    router: { name: "gallery" },
   },
   {
     id: 3,
-    image: "../src/assets/forex.jpg",
+    image: "src/assets/forex.jpg",
     title: "Diploma courses Available",
     description: "",
     button: "Read more",
+    router: { name: "courses" },
   },
   // Add more slides as needed
 ]);

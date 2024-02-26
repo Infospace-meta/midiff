@@ -12,7 +12,7 @@
       <nav
         :class="{ hidden: close, 'sm:flex': open }"
         id="nav-content"
-        class="container max-lg:h-screen max-lg:w-4/5 max-w-4xl right-0 max-lg:top-20 z-50 absolute lg:relative flex max-lg:flex-col lg:flex lg:justify-center border-t max-lg:shadow-2xl border-gray-300 bg-white"
+        class="container text-lg max-lg:h-screen max-lg:w-4/5 max-w-4xl right-0 max-lg:top-20 z-50 absolute lg:relative flex max-lg:flex-col lg:flex lg:justify-center border-t max-lg:shadow-2xl border-gray-300 bg-white"
       >
         <router-link
           :to="{ name: 'home' }"

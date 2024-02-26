@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto max-w-7xl py-10 px-5">
-    <div class="flex flex-col-reverse md:grid grid-cols-9 gap-5">
-      <div class="col-span-6 h-screen flex flex-col gap-5 text-lg">
+    <div class="flex flex-col-reverse lg:grid grid-cols-9 gap-5">
+      <div class="col-span-6 flex flex-col gap-5 text-lg">
         <div
           class="flex items-center text-indigo-700 gap-5 text-3xl justify-center py-5 font-semibold"
         >
@@ -31,7 +31,7 @@
         </p>
         <BankDetails />
       </div>
-      <div class="col-span-3 h-screen p-3">
+      <div class="max-lg:hidden col-span-3 p-3">
         <img src="../../assets/apply.jpg" alt="" />
         <div class="p-5 border border-purple-500 rounded-lg">
           <p class="text-violet-800 text-xl font-semibold uppercase p-5">

@@ -1,14 +1,19 @@
 <template>
-  <div class="mx-auto max-w-7xl py-10 px-5">
-    <div class="flex flex-col-reverse md:grid grid-cols-9 gap-5">
-      <div class="col-span-6 h-screen flex flex-col gap-5 text-lg">
+  <div class="mx-auto max-w-7xl py-10 px-5 max-md:mb-80">
+    <div class="flex flex-col lg:grid grid-cols-9 gap-5">
+      <div class="col-span-6 flex flex-col justify-center gap-9 text-lg">
         <P>
-          To begin your application, simply download the form. Take your time to
-          fill it out accurately, ensuring that all the required information is
-          provided. Once you have completed the form, scan it using a reliable
-          scanner or a scanning app on your smartphone. This will ensure that
-          the document is clear and legible, allowing our admissions team to
-          review your application efficiently.</P
+          To begin your application, simply
+          <a href="path_to_your_pdf_file.pdf" download>
+            <span class="underline capitalize font-semibold text-yellow-700"
+              >Download the form.</span
+            >
+          </a>
+          Take your time to fill it out accurately, ensuring that all the
+          required information is provided. Once you have completed the form,
+          scan it using a reliable scanner or a scanning app on your smartphone.
+          This will ensure that the document is clear and legible, allowing our
+          admissions team to review your application efficiently.</P
         ><P>
           We understand that embarking on a new educational journey can be both
           exciting and overwhelming. That's why our team is here to assist you
@@ -18,13 +23,13 @@
           happy to provide you with the support you need.
         </P>
         <p>
-          Thank you for considering Kabarak University TVET Institute for your
-          educational aspirations. We look forward to receiving your application
-          and welcoming you to our esteemed institution
+          Thank you for considering Midiff Institute of Professional Studies for
+          your educational aspirations. We look forward to receiving your
+          application and welcoming you to our esteemed institution
         </p>
         <BankDetails />
       </div>
-      <div class="col-span-3 h-screen p-3">
+      <div class="max-lg:hidden col-span-3 p-3">
         <img src="../../assets/courses.jpg" alt="" />
         <div class="p-5 border border-purple-500 rounded-lg">
           <p class="text-violet-800 text-xl font-semibold uppercase p-5">

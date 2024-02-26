@@ -8,19 +8,27 @@
         <hr class="w-full border-r-2 border-indigo-700" />
       </div>
 
-      <div v-for="content in contents" :key="content.type">
+      <div
+        v-for="content in contents"
+        :key="content.type"
+        class="overflow-auto"
+      >
+        <p
+          v-if="content.type === 'paragraph'"
+          :style="content.style"
+          class="text-lg"
+        >
+          {{ content.text }}
+        </p>
         <h1
           v-if="content.type === 'heading'"
           class="text-indigo-700 font-semibold text-lg py-2"
         >
           {{ content.text }}
         </h1>
-        <p v-if="content.type === 'paragraph'" :style="content.style">
-          {{ content.text }}
-        </p>
         <table
           v-if="content.type === 'table'"
-          class="border-collapse w-full mt-4 overflow-auto"
+          class="border-collapse w-full mt-4 overflow-auto text-lg"
         >
           <thead>
             <tr>
@@ -29,7 +37,7 @@
                 :key="index"
                 :colspan="header.colspan || 1"
                 :rowspan="header.rowspan || 1"
-                class="bg-slate-200 px-4 py-2"
+                class="bg-slate-200 px-4 py-2 l"
               >
                 {{ header.text || header }}
               </th>
@@ -73,6 +81,11 @@ const contents = ref([
     type: "paragraph",
     text: "At Midiff Institute of Professional Studies, we pride ourselves on being a leading vocational education and training institution dedicated to empowering individuals for successful and fulfilling careers. Our firm belief in the transformative power of technical and vocational education has positioned us at the forefront of providing high-quality training programs across various disciplines. Recognizing the dynamic nature of industries and the job market, we have tailored our offerings to cater to evolving needs, ensuring our students are equipped with the latest skills and knowledge demanded by today's competitive workforce.",
     style: { color: "black" },
+  },
+  {
+    type: "paragraph",
+    text: "Scroll >>>",
+    style: { color: "red", padding:"30px"},
   },
   {
     type: "table",

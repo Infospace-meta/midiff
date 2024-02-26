@@ -1,6 +1,6 @@
 <template>
   <Hero />
-  <Blogs />
+  <!-- <Blogs /> -->
   <Programs />
   <Partners />
 </template>
