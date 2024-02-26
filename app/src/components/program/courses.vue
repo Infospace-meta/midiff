@@ -8,19 +8,27 @@
         <hr class="w-full border-r-2 border-indigo-700" />
       </div>
 
-      <div v-for="content in contents" :key="content.type">
+      <div
+        v-for="content in contents"
+        :key="content.type"
+        class="overflow-auto"
+      >
+        <p
+          v-if="content.type === 'paragraph'"
+          :style="content.style"
+          class="text-lg"
+        >
+          {{ content.text }}
+        </p>
         <h1
           v-if="content.type === 'heading'"
           class="text-indigo-700 font-semibold text-lg py-2"
         >
           {{ content.text }}
         </h1>
-        <p v-if="content.type === 'paragraph'" :style="content.style">
-          {{ content.text }}
-        </p>
         <table
           v-if="content.type === 'table'"
-          class="border-collapse w-full mt-4 overflow-auto"
+          class="border-collapse w-full mt-4 overflow-auto text-lg"
         >
           <thead>
             <tr>
@@ -29,7 +37,7 @@
                 :key="index"
                 :colspan="header.colspan || 1"
                 :rowspan="header.rowspan || 1"
-                class="bg-slate-200 px-4 py-2"
+                class="bg-slate-200 px-4 py-2 l"
               >
                 {{ header.text || header }}
               </th>
@@ -75,12 +83,16 @@ const contents = ref([
     style: { color: "black" },
   },
   {
+    type: "paragraph",
+    text: "Scroll >>>",
+    style: { color: "red", padding:"30px"},
+  },
+  {
     type: "table",
     data: {
       headers: [
         { text: "Level", rowspan: 2, colspan: 2 },
         { text: "Course", rowspan: 2 },
-        { text: "Minimum Requirements", rowspan: 2 },
         { text: "Duration", rowspan: 2 },
         { text: "Tution Fee (Per Semester)", rowspan: 2 },
         { text: "Intake", rowspan: 2 },
@@ -103,9 +115,6 @@ const contents = ref([
             text: "Electrical and Electronic Engineering (Power Option) ",
           },
           {
-            text: "KCSE C- and Above",
-          },
-          {
             text: "7 Terms ",
           },
           {
@@ -123,9 +132,6 @@ const contents = ref([
             text: "Automative Engineering ",
           },
           {
-            text: "KCSE C- and Above",
-          },
-          {
             text: "7 Terms ",
           },
           {
@@ -141,9 +147,6 @@ const contents = ref([
         [
           {
             text: "Plumbing",
-          },
-          {
-            text: "KCSE C- and Above",
           },
           {
             text: "7 Terms ",
@@ -163,9 +166,6 @@ const contents = ref([
             text: "Fashion and Design",
           },
           {
-            text: "KCSE C- and Above",
-          },
-          {
             text: "6 Terms ",
           },
           {
@@ -181,9 +181,6 @@ const contents = ref([
         [
           {
             text: "Hairdressing and Beauty Therapy",
-          },
-          {
-            text: "KCSE C- and Above",
           },
           {
             text: "6 Terms ",
@@ -203,9 +200,6 @@ const contents = ref([
             text: "Food and Beverage",
           },
           {
-            text: "KCSE C- and Above",
-          },
-          {
             text: "3 Terms ",
           },
           {
@@ -223,9 +217,6 @@ const contents = ref([
             text: "Catering",
           },
           {
-            text: "KCSE C- and Above",
-          },
-          {
             text: "2 Terms ",
           },
           {
@@ -241,7 +232,7 @@ const contents = ref([
 
         // Certificate Courses
         [
-          { text: "1", rowspan: 9 },
+          { text: "2", rowspan: 9 },
           {
             text: "CERTIFICATE",
             clickable: true,
@@ -253,10 +244,92 @@ const contents = ref([
             rowspan: 9,
           },
           {
-            text: "Fashion and Design",
+            text: "Hairdressing",
           },
           {
-            text: "KCSE C- and Above",
+            text: "6 Months ",
+          },
+          {
+            text: "10,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "NITA",
+          },
+        ],
+        [
+          {
+            text: "Beauty Therapy",
+          },
+          {
+            text: "6 Months ",
+          },
+          {
+            text: "10,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "NITA",
+          },
+        ],
+        [
+          {
+            text: "Baking Technology",
+          },
+          {
+            text: "3 Months ",
+          },
+          {
+            text: "12,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "Institution",
+          },
+        ],
+        [
+          {
+            text: "Pastry making",
+          },
+          {
+            text: "3 Months ",
+          },
+          {
+            text: "12,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "Institution",
+          },
+        ],
+        [
+          {
+            text: "Food Technology",
+          },
+          {
+            text: "6 Months ",
+          },
+          {
+            text: "12,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "Institution",
+          },
+        ],
+        [
+          {
+            text: "Fashion & Design",
           },
           {
             text: "9 Months ",
@@ -268,7 +341,7 @@ const contents = ref([
             text: "Jan May September",
           },
           {
-            text: "NITA",
+            text: "Institution",
           },
         ],
         [
@@ -276,13 +349,142 @@ const contents = ref([
             text: "Plumbing",
           },
           {
-            text: "Atleast D-",
-          },
-          {
-            text: "2 Terms ",
+            text: "6 Months ",
           },
           {
             text: "18,000",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "NITA",
+          },
+        ],
+        [
+          {
+            text: "Electrical Installation",
+          },
+          {
+            text: "6 Months ",
+          },
+          {
+            text: "10,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "NITA",
+          },
+        ],
+        [
+          {
+            text: "Motor Vehicle Mechanic",
+          },
+          {
+            text: "6 Months ",
+          },
+          {
+            text: "10,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "NITA",
+          },
+        ],
+
+        // Short Courses
+        [
+          { text: "2", rowspan: 9 },
+          {
+            text: "SHORT COURSES",
+            clickable: true,
+            style: {
+              "font-weight": "bold",
+              cursor: "pointer",
+              transition: "color 0.3s ease-in-out",
+            },
+            rowspan: 9,
+          },
+          {
+            text: "Driving School",
+          },
+          {
+            text: "1 Month ",
+          },
+          {
+            text: "12,000",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "NTSA",
+          },
+        ],
+        [
+          {
+            text: "Computer Packages",
+          },
+          {
+            text: "1 Month ",
+          },
+          {
+            text: "6,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "Institution",
+          },
+        ],
+        [
+          {
+            text: "Artificial Intelligence (AI)",
+          },
+          {
+            text: "1 Month ",
+          },
+          {
+            text: "15,000",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "Institution",
+          },
+        ],
+        [
+          {
+            text: "Forex Trading & Securities",
+          },
+          {
+            text: "1 Month ",
+          },
+          {
+            text: "10,500",
+          },
+          {
+            text: "Jan May September",
+          },
+          {
+            text: "Institution",
+          },
+        ],
+        [
+          {
+            text: "Artisan Courses",
+          },
+          {
+            text: "3 Months ",
+          },
+          {
+            text: "12,500",
           },
           {
             text: "Jan May September",
