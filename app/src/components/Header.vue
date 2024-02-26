@@ -123,7 +123,7 @@
 
         <!-- get in touch button -->
         <router-link
-          :to="{ name: 'home' }"
+          :to="{ name: 'contact' }"
           active-class="active-link"
           class="p-5 font-medium hover:text-cyan-600 lg:mr-5"
           @click="toggleMenu"

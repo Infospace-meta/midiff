@@ -7,6 +7,7 @@ import CoursesView from "../views/CoursesView.vue";
 import CoursesPageView from "../views/CoursesPageView.vue";
 import DeptView from "../views/DeptView.vue";
 import NewsView from "../views/NewsView.vue";
+import ContactView from "../views/ContactView.vue";
 import ApplicationView from "../views/Application/Application.vue"
 import EntryRequirementsView from "../views/Application/Requirements.vue";
 import StudentView from "../views/Info/StudentView.vue";
@@ -19,6 +20,7 @@ const routes = [
   { path: "/about", name: "about", component: AboutView },
   { path: "/courses", name: "courses", component: CoursesView },
   { path: "/courses_page", name: "courses_page", component: CoursesPageView },
+  { path: "/contact", name: "contact", component: ContactView },
   { path: "/departments", name: "departments", component: DeptView },
   { path: "/application", name: "application", component: ApplicationView },
   { path: "/entry_requirements", name: "entry_requirements", component: EntryRequirementsView },
