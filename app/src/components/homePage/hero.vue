@@ -81,7 +81,7 @@ import { Splide, SplideSlide } from "@splidejs/vue-splide";
 const slides = ref([
   {
     id: 1,
-    image: "../src/assets/ladies.jpg",
+    image: "../src/assets/ladies.JPG",
     title: "January 2024 Intake in Progress",
     description: "Description 1",
     button: "Enroll",
