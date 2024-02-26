@@ -39,20 +39,20 @@
           <p class="text-yellow-700">
             <span class="capitalize font-semibold text-purple-900"
               >email address: </span
-            >email.com
+            >midiffinstitut@gmail.com
           </p>
           <p class="capitalize text-yellow-700">
-            <span class="font-semibold text-purple-900"> Location:</span> 1908
-            Timarron Way, Naples, FL 34109
+            <span class="font-semibold text-purple-900"> Location:</span> Gibcom
+            Hse, Kenyatta Avenue, Nakuru, 2nd Floor
           </p>
           <p class="capitalize text-yellow-700">
             <span class="font-semibold text-purple-900">call us here :</span
-            >+25404637682
+            >+254100 471070
           </p>
         </div>
       </div>
     </div>
-    <div class="lg:grid grid-cols-6 bg-gray-200">
+    <div class="lg:grid grid-cols-6 bg-gray-50">
       <div class="col-span-4">
         <EmailForm />
       </div>
