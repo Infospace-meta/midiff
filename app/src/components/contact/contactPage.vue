@@ -34,7 +34,7 @@
       <div class="col-span-2 p-4">
         <div class="bg-purple-200 p-10 flex flex-col gap-5">
           <h1 class="text-lg uppercase font-semibold text-purple-900">
-            Get in toucher
+            Get in touch
           </h1>
           <p class="text-yellow-700">
             <span class="capitalize font-semibold text-purple-900"
