@@ -8,10 +8,10 @@
           <h1>ENTRY REQUIREMENTS</h1>
           <hr class="w-full border-r-2 border-indigo-700" />
         </div>
-        <P
-          >To gain admission at Midiff Institute, you must
-          satisfy any of the following minimum requirements:</P
-        >
+        <p>
+          To gain admission at Midiff Institute, you must satisfy any of the
+          following minimum requirements:
+        </p>
         <ul class="p-2 text-lg font-semibold">
           <li>&#9679; Admission fee: 2,500/=</li>
           <li>&#9679; Copy of ID</li>
@@ -20,10 +20,10 @@
         </ul>
         <h1 class="text-2xl">DIPLOMA</h1>
 
-        <P
-          >&#9679; You must hold a KCSE Qualification (or equivalent examination
-          ) with an aggregate C- (Minus) and above.</P
-        >
+        <p>
+          &#9679; You must hold a KCSE Qualification (or equivalent examination
+          ) with an aggregate C- (Minus) and above.
+        </p>
         <h1 class="text-2xl">CERTIFICATE</h1>
         <p>
           &#9679; You must hold a KCSE Qualification (or equivalent examination)
@@ -32,7 +32,10 @@
         <BankDetails />
       </div>
       <div class="max-lg:hidden col-span-3 p-3">
-        <img src="../../assets/apply.jpg" alt="" />
+        <img
+          src="https://res.cloudinary.com/dpfcle0os/image/upload/v1708990033/Midiff/apply_epw21q.jpg"
+          alt=""
+        />
         <div class="p-5 border border-purple-500 rounded-lg">
           <p class="text-violet-800 text-xl font-semibold uppercase p-5">
             Contacts Us
