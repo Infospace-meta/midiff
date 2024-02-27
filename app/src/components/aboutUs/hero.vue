@@ -33,7 +33,8 @@ import { Splide, SplideSlide } from "@splidejs/vue-splide";
 const slides = ref([
   {
     id: 2,
-    image: "../src/assets/group.jpg",
+    image:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990042/Midiff/group_aglx7k.jpg",
     title: "ABOUT US",
     description: "Description 2",
   },

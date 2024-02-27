@@ -2,7 +2,7 @@
   <div class="mx-auto max-w-7xl py-10 px-5 max-md:mb-80">
     <div class="flex flex-col lg:grid grid-cols-9 gap-5">
       <div class="col-span-6 flex flex-col justify-center gap-9 text-lg">
-        <P>
+        <p>
           To begin your application, simply
           <a href="path_to_your_pdf_file.pdf" download>
             <span class="underline capitalize font-semibold text-yellow-700"
@@ -13,15 +13,16 @@
           required information is provided. Once you have completed the form,
           scan it using a reliable scanner or a scanning app on your smartphone.
           This will ensure that the document is clear and legible, allowing our
-          admissions team to review your application efficiently.</P
-        ><P>
+          admissions team to review your application efficiently.
+        </p>
+        <p>
           We understand that embarking on a new educational journey can be both
           exciting and overwhelming. That's why our team is here to assist you
           every step of the way. If you have any questions or require further
           guidance during the application process, please don't hesitate to
           reach out to our friendly admissions staff. They will be more than
           happy to provide you with the support you need.
-        </P>
+        </p>
         <p>
           Thank you for considering Midiff Institute of Professional Studies for
           your educational aspirations. We look forward to receiving your
@@ -30,7 +31,10 @@
         <BankDetails />
       </div>
       <div class="max-lg:hidden col-span-3 p-3">
-        <img src="../../assets/courses.jpg" alt="" />
+        <img
+          src="https://res.cloudinary.com/dpfcle0os/image/upload/v1708990036/Midiff/courses_ockq17.jpg"
+          alt=""
+        />
         <div class="p-5 border border-purple-500 rounded-lg">
           <p class="text-violet-800 text-xl font-semibold uppercase p-5">
             Contacts Us
