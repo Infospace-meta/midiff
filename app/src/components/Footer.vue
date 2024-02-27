@@ -174,7 +174,7 @@
               </a>
             </li>
 
-            <li>
+            <!-- <li>
               <a
                 href="#"
                 rel="noreferrer"
@@ -212,7 +212,7 @@
                   </g>
                 </svg>
               </a>
-            </li>
+            </li> -->
           </ul>
 
           <div class="mt-16 sm:flex sm:items-center sm:justify-between">

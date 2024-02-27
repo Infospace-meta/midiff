@@ -46,7 +46,7 @@
             </svg>
           </a>
         </div>
-        <div class="flex">
+        <!-- <div class="flex">
           <a
             href="#"
             rel="noreferrer"
@@ -65,7 +65,7 @@
               />
             </svg>
           </a>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="px-10">
