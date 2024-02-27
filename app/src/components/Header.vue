@@ -2,7 +2,11 @@
   <div class="w-full z-50" :class="{ 'fixed top-0': isFixed }">
     <header class="h-20 flex px-2 justify-between lg:justify-center bg-white">
       <a class="flex pl-4 items-center font-medium text-gray-900">
-        <img src="@/assets/icon.png" alt="icon" class="h-14 md:h-20 p-1" />
+        <img
+          src="https://res.cloudinary.com/dpfcle0os/image/upload/v1708990027/Midiff/icon_w6wt3f.png"
+          alt="icon"
+          class="h-14 md:h-20 p-1"
+        />
         <div class="flex flex-col lg:text-2xl text-yellow-700 uppercase">
           midiff institute <br /><span class="max-md:hidden lg:text-sm"
             >of proffesional studies</span
