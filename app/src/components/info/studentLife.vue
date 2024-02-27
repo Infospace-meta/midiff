@@ -2,7 +2,7 @@
   <div class="hero-section max-w-7xl mx-auto">
     <div class="">
       <img
-        src="../../assets/students.jpg"
+        src="https://res.cloudinary.com/dpfcle0os/image/upload/v1708990029/Midiff/students_udlckf.jpg"
         alt=""
         class="lg:w-full lg:h-[500px] object-cover object-top"
       />
@@ -53,13 +53,15 @@
   >
     <div class="p-10 lg:w-1/2 lg:translate-x-28 z-10">
       <img
-        src="../../assets/hostel.jpg"
+        src="https://res.cloudinary.com/dpfcle0os/image/upload/v1708990028/Midiff/hostel_dl6sh7.jpg"
         alt=""
         class="lg:w-full lg:h-[370px] object-cover object-top"
       />
     </div>
     <div class="lg:w-2/3">
-      <h1 class="text-7xl lg:translate-y-36 lg:translate-x-56 text-white">Hostels</h1>
+      <h1 class="text-7xl lg:translate-y-36 lg:translate-x-56 text-white">
+        Hostels
+      </h1>
       <hr class="translate-y-56" />
       <h2
         class="text-2xl text-white p-14 text-center lg:translate-y-64 border-l-2 border-white"
@@ -77,7 +79,7 @@
     class="lg:-translate-y-[1100px] lg:translate-x-[640px] max-w-7xl mx-auto"
   >
     <img
-      src="../../assets/student2.jpg"
+      src="https://res.cloudinary.com/dpfcle0os/image/upload/v1708990029/Midiff/student2_hzuagq.jpg"
       alt=""
       class="lg:w-1/2 lg:h-[370px] object-cover object-top"
     />
