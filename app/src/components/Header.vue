@@ -18,6 +18,7 @@
         id="nav-content"
         class="container text-lg max-lg:h-screen max-lg:w-4/5 max-w-4xl right-0 max-lg:top-20 z-50 absolute lg:relative flex max-lg:flex-col lg:flex lg:justify-center border-t max-lg:shadow-2xl border-gray-300 bg-white"
       >
+        <!-- HOME -->
         <router-link
           :to="{ name: 'home' }"
           active-class="active-link"
@@ -26,7 +27,7 @@
           >Home
         </router-link>
 
-        <!-- about us button -->
+        <!-- ABOUT US -->
         <router-link
           :to="{ name: 'about' }"
           active-class="active-link"
@@ -35,11 +36,11 @@
           >About Us
         </router-link>
 
-        <!-- courses Button -->
+        <!-- ADMISSION -->
         <a class="relative inline-block" id="drop">
           <button
             class="inline-flex items-center justify-between max-lg:w-full p-5 rounded-md"
-            @click="toggleDropdown('about')"
+            @click="toggleDropdown('adm')"
           >
             <span class="font-medium text-gray-700">Admission</span>
             <svg
@@ -59,14 +60,15 @@
           </button>
           <!-- DROPDOWN MENU -->
           <div
-            :class="{ hidden: !dropdowns.about.visible }"
+            :class="{ hidden: !dropdowns.adm.visible }"
             class="relative md:absolute z-10 w-64 md:max-w-screen-md bg-white md:shadow-lg"
-            @click.stop="hideDropdown('about')"
+            @click.stop="hideDropdown('adm')"
           >
             <ul class="lg:divide-y lg:divide-yellow-700 lg:py-5">
-              <li v-for="item in dropdowns.about.items" :key="item.id">
+              <li v-for="item in dropdowns.adm.items" :key="item.id">
                 <router-link
                   :to="item.router"
+                  active-class="active-link"
                   class="block px-4 py-2 text-sm text-gray-700 hover:text-cyan-600"
                 >
                   {{ item.label }}
@@ -75,11 +77,11 @@
             </ul>
           </div>
         </a>
-
+        <!-- INFO -->
         <a class="relative inline-block" id="drop2">
           <button
             class="inline-flex items-center justify-between max-lg:w-full p-5 rounded-md"
-            @click="toggleDropdown('event')"
+            @click="toggleDropdown('info')"
           >
             <span class="font-medium text-gray-700">Info</span>
             <svg
@@ -99,14 +101,15 @@
           </button>
           <!-- DROPDOWN MENU -->
           <div
-            :class="{ hidden: !dropdowns.event.visible }"
+            :class="{ hidden: !dropdowns.info.visible }"
             class="relative md:absolute z-10 w-64 md:max-w-screen-md bg-white md:shadow-lg"
-            @click.stop="hideDropdown('event')"
+            @click.stop="hideDropdown('info')"
           >
             <ul class="lg:divide-y lg:divide-yellow-700 lg:py-5">
-              <li v-for="item in dropdowns.event.items" :key="item.id">
+              <li v-for="item in dropdowns.info.items" :key="item.id">
                 <router-link
                   :to="item.router"
+                  active-class="active-link"
                   class="block px-4 py-2 text-sm text-gray-700 hover:text-cyan-600"
                 >
                   {{ item.label }}
@@ -116,7 +119,7 @@
           </div>
         </a>
 
-        <!-- info button -->
+        <!-- COURSES -->
         <router-link
           :to="{ name: 'courses' }"
           active-class="active-link"
@@ -125,7 +128,7 @@
           >Courses
         </router-link>
 
-        <!-- get in touch button -->
+        <!-- GET IN TOUCH -->
         <router-link
           :to="{ name: 'contact' }"
           active-class="active-link"
@@ -188,7 +191,7 @@ const hideDropdown = (dropdown) => {
 };
 
 const dropdowns = ref({
-  about: {
+  adm: {
     visible: false,
     items: [
       { id: 1, label: "Application Process", router: { name: "application" } },
@@ -199,7 +202,7 @@ const dropdowns = ref({
       },
     ],
   },
-  event: {
+  info: {
     visible: false,
     items: [
       { id: 1, label: "News and Updates", router: { name: "news" } },
@@ -219,11 +222,11 @@ const handleOutsideClick = (event) => {
   const drop2 = document.getElementById("drop2");
 
   if (!drop.contains(event.target)) {
-    dropdowns.value["about"].visible = false;
+    dropdowns.value["adm"].visible = false;
   }
 
   if (!drop2.contains(event.target)) {
-    dropdowns.value["event"].visible = false;
+    dropdowns.value["info"].visible = false;
   }
 };
 </script>
