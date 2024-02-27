@@ -42,7 +42,9 @@
     </div>
     <div class="max-w-7xl mx-auto lg:py-10">
       <div class="flex flex-col lg:grid grid-cols-2">
-        <div class="flex flex-col gap-2 lg:gap-8 bg-violet-900 p-8 text-white lg:text-lg">
+        <div
+          class="flex flex-col gap-2 lg:gap-8 bg-violet-900 p-8 text-white lg:text-lg"
+        >
           <h1 class="font-semibold">
             Welcome to Midiff institute of Proffessional Studies
           </h1>
@@ -66,7 +68,11 @@
           </router-link>
         </div>
         <div class="max-lg:hidden">
-          <img class="h-full w-auto" src="@/assets/ladies.JPG" alt="" />
+          <img
+            class="h-full w-auto"
+            src="https://res.cloudinary.com/dpfcle0os/image/upload/v1708990027/Midiff/ladies_xwgqjs.jpg"
+            alt=""
+          />
         </div>
       </div>
     </div>
@@ -81,7 +87,8 @@ import { Splide, SplideSlide } from "@splidejs/vue-splide";
 const slides = ref([
   {
     id: 1,
-    image: "src/assets/ladies.jpg",
+    image:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990027/Midiff/ladies_xwgqjs.jpg",
     title: "January 2024 Intake in Progress",
     description: "Description 1",
     button: "Enroll",
@@ -89,7 +96,8 @@ const slides = ref([
   },
   {
     id: 2,
-    image: "src/assets/graduates.JPG",
+    image:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990026/Midiff/graduates_g3qhuq.jpg",
     title: "class of 2023 graduation",
     description: "Description 2",
     button: "View",
@@ -97,7 +105,8 @@ const slides = ref([
   },
   {
     id: 3,
-    image: "src/assets/forex.jpg",
+    image:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990040/Midiff/forex_nkjnzi.jpg",
     title: "Diploma courses Available",
     description: "",
     button: "Read more",

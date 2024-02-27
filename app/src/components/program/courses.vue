@@ -53,13 +53,9 @@
                 class="border border-gray-200 px-4 py-2"
               >
                 <!-- Check if the cell has a 'clickable' property -->
-                <router-link
-                  v-if="cell.clickable"
-                  :to="`/course/${cell.text}`"
-                  class="hover:text-yellow-600"
-                >
+                <a v-if="cell.clickable" class="hover:text-yellow-600">
                   {{ cell.text || cell }}
-                </router-link>
+                </a>
                 <!-- If not clickable, just display the text -->
                 <span v-else>
                   {{ cell.text || cell }}
@@ -85,7 +81,7 @@ const contents = ref([
   {
     type: "paragraph",
     text: "Scroll >>>",
-    style: { color: "red", padding:"30px"},
+    style: { color: "red", padding: "30px" },
   },
   {
     type: "table",

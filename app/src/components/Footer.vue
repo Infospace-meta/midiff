@@ -12,7 +12,7 @@
             Grab an opportunity by enrolling
           </strong>
           <a
-            href="https://goesselambach.vercel.app/"
+            href="#"
             target="_blank"
             class="inline-flex items-center gap-2 rounded-full border border-white bg-white px-8 py-3 text-violet-900 hover:bg-transparent hover:text-white focus:outline-none active:bg-violet-500"
           >
@@ -130,7 +130,7 @@
           <ul class="flex justify-center gap-6 sm:justify-end">
             <li>
               <a
-                href="/"
+                href="#"
                 rel="noreferrer"
                 target="_blank"
                 class="text-orange-400 transition hover:text-grey-100"
@@ -153,7 +153,7 @@
 
             <li>
               <a
-                href="/"
+                href="#"
                 rel="noreferrer"
                 target="_blank"
                 class="text-orange-400 transition hover:text-grey-100"
@@ -174,9 +174,9 @@
               </a>
             </li>
 
-            <li>
+            <!-- <li>
               <a
-                href="/"
+                href="#"
                 rel="noreferrer"
                 target="_blank"
                 class="text-orange-400 transition hover:text-grey-100"
@@ -212,7 +212,7 @@
                   </g>
                 </svg>
               </a>
-            </li>
+            </li> -->
           </ul>
 
           <div class="mt-16 sm:flex sm:items-center sm:justify-between">

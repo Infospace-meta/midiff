@@ -34,7 +34,7 @@
       <div class="col-span-2 p-4">
         <div class="bg-purple-200 p-10 flex flex-col gap-5">
           <h1 class="text-lg uppercase font-semibold text-purple-900">
-            Get in toucher
+            Get in touch
           </h1>
           <p class="text-yellow-700">
             <span class="capitalize font-semibold text-purple-900"
@@ -97,36 +97,40 @@ const contents = ref([
 ]);
 
 const cards = ref([
-  {
-    name: "instagram",
-    imageURL: "src/assets/linkedin.png",
-    linkURL: "",
-  },
+  //   {
+  //     name: "linkedin",
+  //     imageURL: "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990027/Midiff/linkedin_nvjrsq.png",
+  //     linkURL: "",
+  //   },
 
   {
-    name: "instagram",
-    imageURL: "src/assets/youtube.gif",
-    linkURL: "",
+    name: "youtube",
+    imageURL:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990033/Midiff/youtube_qsmhdq.gif",
+    linkURL: "https://youtu.be/fzPPpG0N1R0?si=3wnOTye_MQjKZH2H",
   },
+  //   {
+  //     name: "x.com",
+  //     imageURL:
+  //       "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990031/Midiff/twitter_z0ujio.png",
+  //     linkURL: "",
+  //   },
+  {
+    name: "facebook",
+    imageURL:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990038/Midiff/facebook_qnwgqp.png",
+    linkURL: "https://www.facebook.com/midiffinstitute/",
+  },
+  //   {
+  //     name: "whatsapp",
+  //     imageURL: "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990033/Midiff/whatsapp_ba2rie.gif",
+  //     linkURL: "",
+  //   },
   {
     name: "instagram",
-    imageURL: "src/assets/twitter.png",
-    linkURL: "",
-  },
-  {
-    name: "instagram",
-    imageURL: "src/assets/facebook.png",
-    linkURL: "",
-  },
-  {
-    name: "instagram",
-    imageURL: "src/assets/whatsapp.gif",
-    linkURL: "",
-  },
-  {
-    name: "instagram",
-    imageURL: "src/assets/instagram.png",
-    linkURL: "",
+    imageURL:
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990027/Midiff/instagram_vlwgg8.png",
+    linkURL: "https://www.instagram.com/midiffinstitute/",
   },
 ]);
 </script>

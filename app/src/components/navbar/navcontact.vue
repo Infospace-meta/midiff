@@ -4,7 +4,7 @@
       <div class="flex flex-row justify-evenly gap-4 px-10">
         <div class="flex">
           <a
-            href="/"
+            href="#"
             rel="noreferrer"
             target="_blank"
             class="transition hover:text-yellow-500"
@@ -26,7 +26,7 @@
         </div>
         <div class="flex">
           <a
-            href="/"
+            href="#"
             rel="noreferrer"
             target="_blank"
             class="transition hover:text-yellow-500"
@@ -46,9 +46,9 @@
             </svg>
           </a>
         </div>
-        <div class="flex">
+        <!-- <div class="flex">
           <a
-            href="/"
+            href="#"
             rel="noreferrer"
             target="_blank"
             class="transition hover:text-yellow-500"
@@ -65,7 +65,7 @@
               />
             </svg>
           </a>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="px-10">
