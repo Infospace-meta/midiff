@@ -41,31 +41,31 @@ const programs = ref([
   {
     id: 1,
     image:
-      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990037/Midiff/electrical_zupwow.jpg",
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1715528443/Midiff/MID2_wc3nqv.jpg",
     name: "Electrical Installation",
   },
   {
     id: 2,
     image:
-      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990026/Midiff/hairdressing_yvettx.jpg",
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1715528450/Midiff/MID8_bqcb86.jpg",
     name: "Hairdressing",
   },
   {
     id: 3,
     image:
-      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990034/Midiff/beauty_gyzwa3.jpg",
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1715528440/Midiff/MID15_cylqtm.jpg",
     name: "Beauty Therapy",
   },
   {
     id: 4,
     image:
-      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990043/Midiff/baking_etmoww.jpg",
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1715528446/Midiff/MID3_ugjsvr.jpg",
     name: "Baking Technology",
   },
   {
     id: 5,
     image:
-      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990039/Midiff/fashion_h60jl9.jpg",
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1715528445/Midiff/MID5_imq7d3.jpg",
     name: "Fashion and Design",
   },
   {
@@ -83,13 +83,13 @@ const programs = ref([
   {
     id: 8,
     image:
-      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990028/Midiff/mechanical_yzvdif.jpg",
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1715528446/Midiff/MID12_kggrvo.jpg",
     name: "Motor Vehicle Mechanic",
   },
   {
     id: 9,
     image:
-      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990045/Midiff/cooking_ymfma7.jpg",
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1715528444/Midiff/MID17_vkknju.jpg",
     name: "Food Technology",
   },
   {

@@ -46,7 +46,7 @@
           class="flex flex-col gap-2 lg:gap-8 bg-violet-900 p-8 text-white lg:text-lg"
         >
           <h1 class="font-semibold">
-            Welcome to Midiff institute of Proffessional Studies
+            Welcome to Midiff institute of Professional Studies
           </h1>
           <p>
             we area leading vocational education and training institution
@@ -67,13 +67,17 @@
             </h1>
           </router-link>
         </div>
-        <div class="max-lg:hidden">
-          <img
-            class="h-full w-auto"
-            src="https://res.cloudinary.com/dpfcle0os/image/upload/v1708990027/Midiff/ladies_xwgqjs.jpg"
-            alt=""
-          />
-        </div>
+        <div
+          class="max-lg:hidden"
+          style="
+            background-image: url('https://res.cloudinary.com/dpfcle0os/image/upload/v1715528443/Midiff/MID18_tmzpgv.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: auto;
+          "
+        ></div>
       </div>
     </div>
   </div>
@@ -88,8 +92,8 @@ const slides = ref([
   {
     id: 1,
     image:
-      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990027/Midiff/ladies_xwgqjs.jpg",
-    title: "January 2024 Intake in Progress",
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1715528445/Midiff/MID13_qtavte.jpg",
+    title: "May 2024 Intake in Progress",
     description: "Description 1",
     button: "Enroll",
     router: { name: "application" },
@@ -98,7 +102,7 @@ const slides = ref([
     id: 2,
     image:
       "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990026/Midiff/graduates_g3qhuq.jpg",
-    title: "class of 2023 graduation",
+    title: "Class of 2023 graduation",
     description: "Description 2",
     button: "View",
     router: { name: "gallery" },
@@ -106,7 +110,7 @@ const slides = ref([
   {
     id: 3,
     image:
-      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990040/Midiff/forex_nkjnzi.jpg",
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1715528448/Midiff/MID10_lcb9ow.jpg",
     title: "Diploma courses Available",
     description: "",
     button: "Read more",
