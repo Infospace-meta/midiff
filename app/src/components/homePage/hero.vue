@@ -88,7 +88,7 @@ const slides = ref([
   {
     id: 1,
     image:
-      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990027/Midiff/ladies_xwgqjs.jpg",
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1715528445/Midiff/MID13_qtavte.jpg",
     title: "May 2024 Intake in Progress",
     description: "Description 1",
     button: "Enroll",
@@ -98,7 +98,7 @@ const slides = ref([
     id: 2,
     image:
       "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990026/Midiff/graduates_g3qhuq.jpg",
-    title: "class of 2023 graduation",
+    title: "Class of 2023 graduation",
     description: "Description 2",
     button: "View",
     router: { name: "gallery" },
@@ -106,7 +106,7 @@ const slides = ref([
   {
     id: 3,
     image:
-      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990040/Midiff/forex_nkjnzi.jpg",
+      "https://res.cloudinary.com/dpfcle0os/image/upload/v1715528448/Midiff/MID10_lcb9ow.jpg",
     title: "Diploma courses Available",
     description: "",
     button: "Read more",
