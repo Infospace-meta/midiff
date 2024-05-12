@@ -34,7 +34,7 @@ const slides = ref([
   {
     id: 2,
     image:
-      "https://res.cloudinary.com/dpfcle0os/image/upload/v1708990042/Midiff/group_aglx7k.jpg",
+      "https://res.cloudinary.com/dpfcle0os/image/upload/c_fill,g_auto,h_250,w_970/b_rgb:000000,e_gradient_fade,y_-0.50/c_scale,co_rgb:ffffff,fl_relative,w_0.5,y_0.18/v1715528445/Midiff/MID4_yivc1v.jpg",
     title: "ABOUT US",
     description: "Description 2",
   },
