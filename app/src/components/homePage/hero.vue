@@ -46,7 +46,7 @@
           class="flex flex-col gap-2 lg:gap-8 bg-violet-900 p-8 text-white lg:text-lg"
         >
           <h1 class="font-semibold">
-            Welcome to Midiff institute of Proffessional Studies
+            Welcome to Midiff institute of Professional Studies
           </h1>
           <p>
             we area leading vocational education and training institution
