@@ -13,7 +13,7 @@
           >
             midiff institute <br /><span
               class="max-md:hidden lg:text-xs xl:text-sm"
-              >of proffesional studies</span
+              >of professional studies</span
             >
           </div>
         </a>
