@@ -70,7 +70,7 @@
         <div class="max-lg:hidden">
           <img
             class="h-full w-auto"
-            src="https://res.cloudinary.com/dpfcle0os/image/upload/v1708990027/Midiff/ladies_xwgqjs.jpg"
+            src="https://res.cloudinary.com/dpfcle0os/image/upload/v1715528443/Midiff/MID18_tmzpgv.jpg"
             alt=""
           />
         </div>
