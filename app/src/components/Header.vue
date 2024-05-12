@@ -1,7 +1,9 @@
 <template>
   <div class="w-full z-50" :class="{ 'fixed top-0': isFixed }">
     <header class="h-20 flex px-2 lg:justify-center bg-white">
-      <div class="lg:max-w-7xl lg:mx-auto lg:grid grid-cols-12 justify-between flex w-full">
+      <div
+        class="lg:max-w-7xl lg:mx-auto lg:grid grid-cols-12 justify-between flex w-full"
+      >
         <a class="col-span-3 flex pl-4 items-center font-medium text-gray-900">
           <img
             src="https://res.cloudinary.com/dpfcle0os/image/upload/v1708990027/Midiff/icon_w6wt3f.png"
@@ -145,12 +147,11 @@
         <!-- used for the opening and closing of the navbar in small devices  -->
         <div class="col-span-1 flex items-center right-0 h-full pl-4 ml-6">
           <div class="p-2 lg:border-l-2 border-orange-700">
-            <a
-              href="#_"
+            <router-link
+              :to="{ name: 'application' }"
               class="px-4 py-2 text-xs font-bold text-white uppercase rounded-full transition-all duration-150 bg-violet-900 shadow outline-none active:bg-violet-900 hover:shadow-md focus:outline-none ease"
+              >Enroll</router-link
             >
-              Enroll
-            </a>
           </div>
           <button
             data-collapse-toggle="navbar-sticky"
