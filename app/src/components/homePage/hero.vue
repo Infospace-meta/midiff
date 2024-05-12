@@ -67,13 +67,17 @@
             </h1>
           </router-link>
         </div>
-        <div class="max-lg:hidden">
-          <img
-            class="h-full w-auto"
-            src="https://res.cloudinary.com/dpfcle0os/image/upload/v1715528443/Midiff/MID18_tmzpgv.jpg"
-            alt=""
-          />
-        </div>
+        <div
+          class="max-lg:hidden"
+          style="
+            background-image: url('https://res.cloudinary.com/dpfcle0os/image/upload/v1715528443/Midiff/MID18_tmzpgv.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: auto;
+          "
+        ></div>
       </div>
     </div>
   </div>
