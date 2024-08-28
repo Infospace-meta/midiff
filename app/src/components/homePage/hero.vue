@@ -93,7 +93,7 @@ const slides = ref([
     id: 1,
     image:
       "https://res.cloudinary.com/dpfcle0os/image/upload/v1715528445/Midiff/MID13_qtavte.jpg",
-    title: "May 2024 Intake in Progress",
+    title: "September 2024 Intake in Progress",
     description: "Description 1",
     button: "Enroll",
     router: { name: "application" },

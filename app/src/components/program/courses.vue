@@ -405,21 +405,6 @@ const contents = ref([
             },
             rowspan: 9,
           },
-          {
-            text: "Driving School",
-          },
-          {
-            text: "1 Month ",
-          },
-          {
-            text: "12,000",
-          },
-          {
-            text: "Jan May September",
-          },
-          {
-            text: "NTSA",
-          },
         ],
         [
           {
