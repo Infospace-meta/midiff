@@ -26,13 +26,6 @@
                       {{ slide.button }}
                     </button></router-link
                   >
-                  <!-- <router-link :to="{ name: 'home' }" class="p-5"
-                    ><button
-                      class="py-2 px-4 text-2xl bg-indigo-700 rounded-lg text-white"
-                    >
-                      {{ slide.buttonTwo }}
-                    </button></router-link
-                  > -->
                 </div>
               </div>
             </div>
