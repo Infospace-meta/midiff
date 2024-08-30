@@ -22,24 +22,6 @@
 import { ref } from "vue";
 
 const details = ref([
-  // {
-  //   name: "Overview",
-  //   content: [
-  //     {
-  //       type: "heading",
-  //       text: "I&M BANK",
-  //       style: { color: "black" },
-  //     },
-  //     {
-  //       type: "list",
-  //       items: [
-  //         "BRANCH: NAKURU",
-  //         "ACCOUNT NAME: MIDIFF INSTITUTE OF PROFESSIONAL STUDIES",
-  //         "ACCOUNT NO.: 01803148391852",
-  //       ],
-  //     },
-  //   ],
-  // },
   {
     name: "Overview",
     content: [

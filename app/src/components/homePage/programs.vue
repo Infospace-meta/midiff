@@ -8,21 +8,6 @@
         :key="program.id"
         class="relative flex flex-col items-center justify-start w-full text-left bg-center bg-cover border rounded-lg"
       >
-        <!-- <div
-          class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-transparent dark:to-black"
-        ></div>
-        <div
-          class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3"
-        ></div> -->
-        <!-- <h2 class="z-10 p-5 text-2xl">
-          <a
-            rel="noopener noreferrer"
-            href="#"
-            class="font-medium text-md hover:underline dark:text-gray-100"
-          >
-            {{ program.name }}</a
-          >
-        </h2> -->
         <div
           class="h-40 w-full bg-cover rounded-t-lg"
           :style="{ backgroundImage: `url('${program.image}')` }"
